@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qingfeng.customize.mapper.VmenuTfieldMapper">
+
+    <!--查询字段表分页列表-->
+    <select id="findFieldList" parameterType="com.qingfeng.utils.PageData" resultType="com.qingfeng.utils.PageData">
+        select
+            a.id as "field_id",
+            a.type as "type",
+            a.table_id as "table_id",
+            a.field_name as "field_name",
+            a.field_type as "field_type",
+            a.dynamic as "dynamic",
+            a.dynamicKey as "dynamicKey",
+            a.options as "options",
+            IFNULL(b.field_list,"false") as "field_list",
+            IFNULL(b.field_comment,a.field_comment) as "field_comment",
+            IFNULL(b.field_query,"false") as "field_query",
+            IFNULL(b.query_type,"") as "query_type",
+            IFNULL(b.field_link,"false") as "field_link",
+            IFNULL(b.field_width,"") as "field_width",
+            IFNULL(b.order_by,"") as "order_by"
+            from customize_vfield a
+            left join customize_vmenu_tfield b on a.field_name=b.field_name
+            <if test="menu_id != null and menu_id != ''">
+                and b.menu_id=#{menu_id}
+            </if>
+            where a.type=#{type} and a.table_id = #{table_id}
+            order by b.order_by+0 asc
+    </select>
+
+
+</mapper>

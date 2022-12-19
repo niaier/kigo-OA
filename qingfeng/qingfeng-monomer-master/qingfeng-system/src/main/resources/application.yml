@@ -1,0 +1,85 @@
+server:
+  port: 8301
+
+spring:
+  application:
+    name: qingfeng-system
+  datasource:
+    dynamic:
+      p6spy: true
+      hikari:
+        connection-timeout: 30000
+        max-lifetime: 1800000
+        max-pool-size: 15
+        min-idle: 5
+        connection-test-query: select 1
+        pool-name: QingfengHikariCP
+      primary: base
+      datasource:
+        base:
+          username: root
+          password: root
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          url: jdbc:mysql://localhost:3306/qingfeng_monomer_test?useUnicode=true&characterEncoding=UTF-8&useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2b8&allowPublicKeyRetrieval=true
+#  datasource:
+##    driver-class-name: com.mysql.cj.jdbc.Driver
+#    driver-class-name: com.p6spy.engine.spy.P6SpyDriver
+#    url: jdbc:p6spy:mysql://localhost:3306/qingfeng_monomer?useUnicode=true&characterEncoding=UTF-8&useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2b8
+#    username: root
+#    password: Root@123
+#    hikari:
+#      pool-name: testOneDB
+#      maximum-pool-size: 15
+#      max-lifetime: 180000
+#      idle-timeout: 60000
+#      connection-timeout: 20000
+#      minimum-idle: 5
+#      connection-test-query: SELECT 1
+
+  activiti:
+    #1.flase： 默认值。activiti在启动时，会对比数据库表中保存的版本，如果没有表或者版本不匹配，将抛出异常
+    #2.true： activiti会对数据库中所有表进行更新操作。如果表不存在，则自动创建
+    #3.create_drop： 在activiti启动时创建表，在关闭时删除表（必须手动关闭引擎，才能删除表）
+    #4.drop-create： 在activiti启动时删除原来的旧表，然后在创建新表（不需要手动关闭引擎）
+    database-schema-update: true
+    #检测历史表是否存在 activiti7默认没有开启数据库历史记录 启动数据库历史记录
+    db-history-used: true
+    #记录历史等级 可配置的历史级别有none, activity, audit, full
+    history-level: full
+    #校验流程文件，默认校验resources下的processes文件夹里的流程文件
+    check-process-definitions: false
+
+  servlet:
+    multipart:
+      max-file-size : 10MB
+      max-request-size : 100MB
+
+  redis:
+    database: 0
+    host: 121.40.112.76
+    port: 6379
+    password: yurui123
+    lettuce:
+      pool:
+        min-idle: 8
+        max-idle: 500
+        max-active: 2000
+        max-wait: 10000
+    timeout: 5000
+
+mybatis-plus:
+  type-aliases-package: com.qingfeng.entity.*
+  mapper-locations: classpath:mapper/*/*.xml
+  configuration:
+    jdbc-type-for-null: null
+    map-underscore-to-camel-case: false # 数据库下划线自动转驼峰标示关闭
+  global-config:
+    banner: false
+
+info:
+  app:
+    name: ${spring.application.name}
+    description: "@project.description@"
+    version: "@project.version@"
+
+uploadFolder: D:/uploadFiles/

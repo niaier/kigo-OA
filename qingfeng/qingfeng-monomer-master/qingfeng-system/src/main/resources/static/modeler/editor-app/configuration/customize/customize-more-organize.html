@@ -1,0 +1,65 @@
+
+<div class="modal" ng-controller="CustomizeOrganizeSelectMorePopupCtrl">
+    <div class="modal-dialog" style="width: 1000px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true" ng-click="close()">&times;</button>
+                <h2 translate>多选组织</h2>
+            </div>
+            <form class="layui-form" action="" id="form">
+                <div style="padding-top: 10px">
+                    <blockquote id="search" class="layui-elem-quote">
+                        <label class="layui-form-lab" style="width: auto">组织名称</label>
+                        <input type="text" name="name" id="name" ng-model="name" style="width: 180px;height: 32px;display: inline" placeholder="请输入组织名称" class="layui-input">
+                        <label class="layui-form-lab" style="width: auto">组织简称</label>
+                        <input type="text" name="short_name" id="short_name" ng-model="short_name" style="width: 180px;height: 32px;display: inline" placeholder="请输入组织简称" class="layui-input">
+                        <button type="button" class="layui-btn layui-btn-sm" ng-click="searchOrganize();">
+                            搜索
+                        </button>
+                        <button type="button" class="layui-btn layui-btn-sm" ng-click="clearData();">
+                            清空
+                        </button>
+                    </blockquote>
+
+                </div>
+                <div align="left">
+                    <div style="float: left;width: 25%;height: 320px;background-color: #eee;">
+                        <div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+                            <ul class="layui-tab-title">
+                                <li class="layui-this">组织</li>
+                            </ul>
+                            <div class="layui-tab-content" style="height: 100px;">
+                                <div class="layui-tab-item layui-show">
+                                    <treecontrol class="tree-classic" tree-model="treedata" options="opts" expanded-nodes="expandedNodes" on-selection="showSelected(node)">
+                                        <!--                                        <button ng-click="buttonClick($event, node)">Click Me!</button>-->
+                                        {{node.name}}
+                                    </treecontrol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="float: left;width: 73%;height: 320px;">
+                        <div style="height: 40px;line-height: 40px;" align="left">
+                            多选组织
+                        </div>
+                        <div style="border: 1px solid #5FB878;height: 198px;border-radius:4px;">
+                            <ul class="myOrgUl" id="listOrg">
+                                <li style="float: left;padding: 2px 8px;" ng-repeat=" data in orgData ">
+                                    <input type="checkbox" name="org" ng-click="selectOrg(data,$event)" ng-checked="isSelected(data.id)" style="display: inline"/><span style="padding: 2px 4px">{{data.name}}</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="label_org" style="height: 88px;border: 1px solid #5FB878;margin-top: 2px;border-radius:4px;overflow-y:scroll;" align="left">
+                            <span ng-repeat="data in selectData" class="layui-badge layui-bg-green badge" style="height: 24px;line-height: 24px;margin: 2px 4px;">{{data.organize_name}}<a style="color: #f00;text-decoration: none;padding-left: 6px;" ng-click="delOrg(data);">x</a></span>
+                        </div>
+                    </div>
+                    <div style="clear: both"></div>
+                </div>
+                <div align="center" style="padding: 20px;">
+                    <button type="button" class="layui-btn layui-btn-sm" ng-click="save()">确定</button>
+                    <button type="button" class="layui-btn layui-btn-danger layui-btn-sm" ng-click="close()">取消</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qingfeng.customize.mapper.VfieldMapper">
+
+    <!--添加字段-->
+    <select id="addField" parameterType="com.qingfeng.utils.PageData">
+        alter table ${table_name} add column ${field_name} ${field_type} ${field_null} comment '${field_comment}';
+    </select>
+
+    <!--删除字段-->
+    <select id="delField" parameterType="com.qingfeng.utils.PageData">
+        alter table ${table_name} drop column ${field_name};
+    </select>
+
+    <select id="updateField" parameterType="com.qingfeng.utils.PageData">
+        alter table ${table_name} change ${old_field_name} ${field_name} ${field_type} ${field_null} comment '${field_comment}';
+    </select>
+
+
+</mapper>

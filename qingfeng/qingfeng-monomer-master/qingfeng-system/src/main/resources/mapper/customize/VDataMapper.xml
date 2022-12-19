@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qingfeng.customize.mapper.VDataMapper">
+
+    <!--数据权限-->
+    <sql id="authPageSql">
+        <!-- 数据权限 -->
+        <if test="(obj.auth_organize_ids == null or obj.auth_organize_ids.size == 0) and (obj.auth_user != null and obj.auth_user != '')">
+            and a.create_user=#{obj.auth_user}
+        </if>
+        <if test="obj.auth_organize_ids != null and obj.auth_organize_ids.size > 0">
+            and (a.create_user=#{obj.auth_user} or a.create_organize in
+            <foreach collection="obj.auth_organize_ids" item="organize_id" open="(" separator="," close=")">
+                #{organize_id}
+            </foreach>
+            )
+        </if>
+    </sql>
+    <sql id="authPdSql">
+        <!-- 数据权限 -->
+        <if test="(auth_organize_ids == null or auth_organize_ids.size == 0) and (auth_user != null and auth_user != '')">
+            and a.create_user=#{auth_user}
+        </if>
+        <if test="auth_organize_ids != null and auth_organize_ids.size > 0">
+            and (a.create_user=#{auth_user} or a.create_organize in
+            <foreach collection="auth_organize_ids" item="organize_id" open="(" separator="," close=")">
+                #{organize_id}
+            </foreach>
+            )
+        </if>
+    </sql>
+
+    <!--查询数据分页列表-->
+    <select id="findListPage" parameterType="com.qingfeng.utils.Page" resultType="com.qingfeng.utils.PageData">
+        select
+        a.id as "id",
+        ${obj.field}
+        a.type as "type",
+        a.status as "status",
+        a.main_id as "main_id",
+        a.menu_id as "menu_id",
+        a.create_time as "create_time",
+        a.create_user as "create_user",
+        a.update_user as "update_user",
+        a.update_time as "update_time"
+        from ${obj.table_name} a
+        where 1=1
+        ${obj.query_field}
+        <include refid="authPageSql"></include>
+        ${obj.order_by}
+    </select>
+
+
+    <!--保存-->
+    <insert id="saveData" parameterType="com.qingfeng.utils.PageData">
+        insert into ${table_name} (
+            id,
+            type,
+            ${param_key}
+            menu_id,
+            main_id,
+            status,
+            create_time,
+            create_user,
+            create_organize
+        ) values (
+             #{id,jdbcType=VARCHAR},
+             #{type,jdbcType=VARCHAR},
+             ${param_value}
+             #{menu_id,jdbcType=VARCHAR},
+             #{main_id,jdbcType=VARCHAR},
+             #{status,jdbcType=VARCHAR},
+             #{create_time,jdbcType=VARCHAR},
+             #{create_user,jdbcType=VARCHAR},
+             #{create_organize,jdbcType=VARCHAR}
+         )
+    </insert>
+
+    <!--更新-->
+    <update id="updateData" parameterType="com.qingfeng.utils.PageData">
+        update ${table_name} set
+        <if test="type != null">type=#{type},</if>
+        ${paramField}
+        <if test="status != null">status=#{status},</if>
+        <if test="update_user != null">update_user=#{update_user},</if>
+        update_time=#{update_time}
+        where id=#{id}
+    </update>
+
+    <!--查询数据详情-->
+    <select id="findInfo" parameterType="com.qingfeng.utils.PageData" resultType="com.qingfeng.utils.PageData">
+        select
+        a.id as "id",
+        ${field}
+        a.type as "type",
+        a.status as "status",
+        a.main_id as "main_id",
+        a.menu_id as "menu_id",
+        a.create_time as "create_time",
+        a.create_user as "create_user",
+        a.update_user as "update_user",
+        a.update_time as "update_time"
+        from ${table_name} a
+        where a.id=#{id}
+    </select>
+
+
+    <!--查询数据列表-->
+    <select id="findList" parameterType="com.qingfeng.utils.PageData" resultType="com.qingfeng.utils.PageData">
+        select
+            a.id as "id",
+            ${field}
+            a.type as "type",
+            a.status as "status",
+            a.main_id as "main_id",
+            a.menu_id as "menu_id",
+            a.create_time as "create_time",
+            a.create_user as "create_user",
+            a.update_user as "update_user",
+            a.update_time as "update_time"
+        from ${table_name} a
+        where a.main_id=#{main_id}
+    </select>
+
+    <!--删除子表-id不存在的子表-->
+    <delete id="delMyChildData" parameterType="com.qingfeng.utils.PageData" >
+        delete from ${table_name} where id not in
+        <foreach collection="fieldIds" item="id" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+
+    <!--删除主表-->
+    <delete id="delData" parameterType="com.qingfeng.utils.PageData" >
+        delete from ${table_name} where id in
+        <foreach collection="ids" item="id" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+
+    <!--删除子表-->
+    <delete id="delChildData" parameterType="com.qingfeng.utils.PageData" >
+        delete from ${table_name} where main_id in
+        <foreach collection="main_ids" item="id" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+
+    <!--更新状态-->
+    <update id="updateStatus" parameterType="com.qingfeng.utils.PageData">
+        update ${table_name} set
+        <if test="status != null">status=#{status},</if>
+        update_time=#{update_time}
+        where 1=1
+        <if test="id != null and id != ''">
+            and id=#{id}
+        </if>
+    </update>
+
+</mapper>

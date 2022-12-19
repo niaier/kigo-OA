@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qingfeng.document.mapper.DShareRecordMapper">
+
+    <!--查询分页列表-->
+    <select id="findListPage" parameterType="com.qingfeng.utils.PageData" resultType="com.qingfeng.utils.PageData">
+        select
+            a.id as "id",
+            a.type as "type",
+            a.dfile_id as "dfile_id",
+            a.create_time as "create_time",
+            a.create_user as "create_user",
+            b.name as "name",
+            b.file_name as "file_name",
+            b.file_path as "file_path",
+            b.file_type as "file_type",
+            b.file_size as "file_size",
+            b.file_suffix as "file_suffix",
+            c.name as "classify_name"
+            from document_sharerecord a
+            left join document_dfile b on a.dfile_id=b.id
+            left join document_dclassify c on b.classify_id=c.id
+            where 1=1
+            <if test="obj.type != null and obj.type != ''">
+                and a.type = #{obj.type}
+            </if>
+            <if test="obj.create_user != null and obj.create_user != ''">
+                and a.create_user = #{obj.create_user}
+            </if>
+            order by a.create_time desc
+    </select>
+
+
+
+</mapper>

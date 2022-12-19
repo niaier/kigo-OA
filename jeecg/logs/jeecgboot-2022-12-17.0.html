@@ -1,0 +1,1964 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Logback Log Messages</title>
+<style  type="text/css">
+table { margin-left: 2em; margin-right: 2em; border-left: 2px solid #AAA; }
+TR.even { background: #FFFFFF; }
+TR.odd { background: #EAEAEA; }
+TR.warn TD.Level, TR.error TD.Level, TR.fatal TD.Level {font-weight: bold; color: #FF4040 }
+TD { padding-right: 1ex; padding-left: 1ex; border-right: 2px solid #AAA; }
+TD.Time, TD.Date { text-align: right; font-family: courier, monospace; font-size: smaller; }
+TD.Thread { text-align: left; }
+TD.Level { text-align: right; }
+TD.Logger { text-align: left; }
+TR.header { background: #596ED5; color: #FFF; font-weight: bold; font-size: larger; }
+TD.Exception { background: #A2AEE8; font-family: courier, monospace;}
+</style>
+
+  </head>
+<body>
+<hr/>
+<p>Log session start time Sat Dec 17 13:13:01 CST 2022</p><p></p>
+
+<table cellspacing="0">
+<tr class="header">
+<td class="Level">Level</td>
+<td class="Date">Date</td>
+<td class="Message">Message</td>
+<td class="MethodOfCaller">MethodOfCaller</td>
+<td class="FileOfCaller">FileOfCaller</td>
+<td class="LineOfCaller">LineOfCaller</td>
+</tr>
+
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:13:01,030</td>
+<td class="Message">加密操作，Aspect程序耗时：1ms</td>
+<td class="MethodOfCaller">around</td>
+<td class="FileOfCaller">SensitiveDataAspect.java</td>
+<td class="LineOfCaller">76</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:13:01,159</td>
+<td class="Message"> 用户名:  管理员,退出成功！ </td>
+<td class="MethodOfCaller">logout</td>
+<td class="FileOfCaller">LoginController.java</td>
+<td class="LineOfCaller">193</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:13:01,281</td>
+<td class="Message">获取验证码，Redis key = 1ba8b0f81205057d79c02e68f3e90013，checkCode = RiHe</td>
+<td class="MethodOfCaller">randomImage</td>
+<td class="FileOfCaller">LoginController.java</td>
+<td class="LineOfCaller">516</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:13:04,116</td>
+<td class="Message">获取验证码，Redis key = 06794261cb0e7cd8a254780798715735，checkCode = mrKE</td>
+<td class="MethodOfCaller">randomImage</td>
+<td class="FileOfCaller">LoginController.java</td>
+<td class="LineOfCaller">516</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:13:10,828</td>
+<td class="Message">redis remove key:sys:cache:encrypt:user::admin</td>
+<td class="MethodOfCaller">remove</td>
+<td class="FileOfCaller">JeecgRedisCacheWriter.java</td>
+<td class="LineOfCaller">113</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:13:10,967</td>
+<td class="Message">加密操作，Aspect程序耗时：1ms</td>
+<td class="MethodOfCaller">around</td>
+<td class="FileOfCaller">SensitiveDataAspect.java</td>
+<td class="LineOfCaller">76</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:13:11,519</td>
+<td class="Message">【系统 WebSocket】有新的连接，总数为:1</td>
+<td class="MethodOfCaller">onOpen</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">43</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:13:11,663</td>
+<td class="Message">======获取一级菜单数据=====耗时:11毫秒</td>
+<td class="MethodOfCaller">getSystemMenuList</td>
+<td class="FileOfCaller">SysPermissionController.java</td>
+<td class="LineOfCaller">140</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:13:18,460</td>
+<td class="Message">拦截请求 &gt;&gt; /sys/user/list ; 请求类型 &gt;&gt; GET . </td>
+<td class="MethodOfCaller">arround</td>
+<td class="FileOfCaller">PermissionDataAspect.java</td>
+<td class="LineOfCaller">71</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:13:18,530</td>
+<td class="Message">排序规则&gt;&gt;列:createTime,排序方式:desc</td>
+<td class="MethodOfCaller">doMultiFieldsOrder</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">241</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:13:18,562</td>
+<td class="Message">com.baomidou.mybatisplus.extension.plugins.pagination.Page@d842021</td>
+<td class="MethodOfCaller">queryPageList</td>
+<td class="FileOfCaller">SysUserController.java</td>
+<td class="LineOfCaller">158</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:13:19,538</td>
+<td class="Message">排序规则&gt;&gt;列:createTime,排序方式:desc</td>
+<td class="MethodOfCaller">doMultiFieldsOrder</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">241</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:14:01,345</td>
+<td class="Message">拦截请求 &gt;&gt; /online/cgform/head/list ; 请求类型 &gt;&gt; GET . </td>
+<td class="MethodOfCaller">arround</td>
+<td class="FileOfCaller">PermissionDataAspect.java</td>
+<td class="LineOfCaller">71</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:14:01,363</td>
+<td class="Message">---查询过滤器，Query规则---field:copy_type, rule:=, value:0</td>
+<td class="MethodOfCaller">addEasyQuery</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">648</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:14:01,366</td>
+<td class="Message">排序规则&gt;&gt;列:createTime,排序方式:desc</td>
+<td class="MethodOfCaller">doMultiFieldsOrder</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">241</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:14:19,504</td>
+<td class="Message">拦截请求 &gt;&gt; /online/cgform/head/list ; 请求类型 &gt;&gt; GET . </td>
+<td class="MethodOfCaller">arround</td>
+<td class="FileOfCaller">PermissionDataAspect.java</td>
+<td class="LineOfCaller">71</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:14:19,514</td>
+<td class="Message">---查询过滤器，Query规则---field:copy_type, rule:=, value:0</td>
+<td class="MethodOfCaller">addEasyQuery</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">648</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:14:19,516</td>
+<td class="Message">排序规则&gt;&gt;列:createTime,排序方式:desc</td>
+<td class="MethodOfCaller">doMultiFieldsOrder</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">241</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:14:29,396</td>
+<td class="Message">拦截请求 &gt;&gt; /online/cgform/head/list ; 请求类型 &gt;&gt; GET . </td>
+<td class="MethodOfCaller">arround</td>
+<td class="FileOfCaller">PermissionDataAspect.java</td>
+<td class="LineOfCaller">71</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:14:29,403</td>
+<td class="Message">---查询过滤器，Query规则---field:copy_type, rule:=, value:1</td>
+<td class="MethodOfCaller">addEasyQuery</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">648</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:14:29,407</td>
+<td class="Message">---查询过滤器，Query规则---field:physic_id, rule:=, value:250b367a342a451e9d9baeaebf8394e2</td>
+<td class="MethodOfCaller">addEasyQuery</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">648</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:14:29,408</td>
+<td class="Message">排序规则&gt;&gt;列:createTime,排序方式:desc</td>
+<td class="MethodOfCaller">doMultiFieldsOrder</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">241</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:14:38,070</td>
+<td class="Message">拦截请求 &gt;&gt; /online/cgform/api/getData/8a808882851e812901851e81292f0000 ; 请求类型 &gt;&gt; GET . </td>
+<td class="MethodOfCaller">arround</td>
+<td class="FileOfCaller">PermissionDataAspect.java</td>
+<td class="LineOfCaller">71</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:14:47,231</td>
+<td class="Message">拦截请求 &gt;&gt; /online/cgform/head/list ; 请求类型 &gt;&gt; GET . </td>
+<td class="MethodOfCaller">arround</td>
+<td class="FileOfCaller">PermissionDataAspect.java</td>
+<td class="LineOfCaller">71</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:14:47,237</td>
+<td class="Message">---查询过滤器，Query规则---field:copy_type, rule:=, value:1</td>
+<td class="MethodOfCaller">addEasyQuery</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">648</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:14:47,238</td>
+<td class="Message">---查询过滤器，Query规则---field:physic_id, rule:=, value:250b367a342a451e9d9baeaebf8394e2</td>
+<td class="MethodOfCaller">addEasyQuery</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">648</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:14:47,238</td>
+<td class="Message">排序规则&gt;&gt;列:createTime,排序方式:desc</td>
+<td class="MethodOfCaller">doMultiFieldsOrder</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">241</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:14:48,055</td>
+<td class="Message">拦截请求 &gt;&gt; /online/cgform/head/list ; 请求类型 &gt;&gt; GET . </td>
+<td class="MethodOfCaller">arround</td>
+<td class="FileOfCaller">PermissionDataAspect.java</td>
+<td class="LineOfCaller">71</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:14:48,061</td>
+<td class="Message">---查询过滤器，Query规则---field:copy_type, rule:=, value:0</td>
+<td class="MethodOfCaller">addEasyQuery</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">648</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:14:48,061</td>
+<td class="Message">排序规则&gt;&gt;列:createTime,排序方式:desc</td>
+<td class="MethodOfCaller">doMultiFieldsOrder</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">241</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:16:03,162</td>
+<td class="Message">拦截请求 &gt;&gt; /online/cgform/head/list ; 请求类型 &gt;&gt; GET . </td>
+<td class="MethodOfCaller">arround</td>
+<td class="FileOfCaller">PermissionDataAspect.java</td>
+<td class="LineOfCaller">71</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:16:03,167</td>
+<td class="Message">---查询过滤器，Query规则---field:copy_type, rule:=, value:0</td>
+<td class="MethodOfCaller">addEasyQuery</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">648</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:16:03,168</td>
+<td class="Message">排序规则&gt;&gt;列:createTime,排序方式:desc</td>
+<td class="MethodOfCaller">doMultiFieldsOrder</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">241</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:16:04,762</td>
+<td class="Message">排序规则&gt;&gt;列:null,排序方式:null</td>
+<td class="MethodOfCaller">doMultiFieldsOrder</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">241</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:16:04,769</td>
+<td class="Message">排序规则&gt;&gt;列:createTime,排序方式:desc</td>
+<td class="MethodOfCaller">doMultiFieldsOrder</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">241</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:16:12,086</td>
+<td class="Message">拦截请求 &gt;&gt; /online/cgreport/api/getColumnsAndData/1260179852088135681 ; 请求类型 &gt;&gt; GET . </td>
+<td class="MethodOfCaller">arround</td>
+<td class="FileOfCaller">PermissionDataAspect.java</td>
+<td class="LineOfCaller">71</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:16:12,107</td>
+<td class="Message">--获取sql信息--</td>
+<td class="MethodOfCaller">isPass</td>
+<td class="FileOfCaller">AbstractQueryBlackListHandler.java</td>
+<td class="LineOfCaller">55</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:16:26,442</td>
+<td class="Message">排序规则&gt;&gt;列:null,排序方式:null</td>
+<td class="MethodOfCaller">doMultiFieldsOrder</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">241</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:16:26,442</td>
+<td class="Message">排序规则&gt;&gt;列:createTime,排序方式:desc</td>
+<td class="MethodOfCaller">doMultiFieldsOrder</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">241</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:16:41,322</td>
+<td class="Message">----duplicate check------：DuplicateCheckVo(tableName=onl_cgreport_head, fieldName=code, fieldVal=x, dataId=null)</td>
+<td class="MethodOfCaller">doDuplicateCheck</td>
+<td class="FileOfCaller">DuplicateCheckController.java</td>
+<td class="LineOfCaller">50</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:16:41,559</td>
+<td class="Message">----duplicate check------：DuplicateCheckVo(tableName=onl_cgreport_head, fieldName=code, fieldVal=xx, dataId=null)</td>
+<td class="MethodOfCaller">doDuplicateCheck</td>
+<td class="FileOfCaller">DuplicateCheckController.java</td>
+<td class="LineOfCaller">50</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:16:41,833</td>
+<td class="Message">----duplicate check------：DuplicateCheckVo(tableName=onl_cgreport_head, fieldName=code, fieldVal=xxx, dataId=null)</td>
+<td class="MethodOfCaller">doDuplicateCheck</td>
+<td class="FileOfCaller">DuplicateCheckController.java</td>
+<td class="LineOfCaller">50</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:16:42,039</td>
+<td class="Message">----duplicate check------：DuplicateCheckVo(tableName=onl_cgreport_head, fieldName=code, fieldVal=xxxx, dataId=null)</td>
+<td class="MethodOfCaller">doDuplicateCheck</td>
+<td class="FileOfCaller">DuplicateCheckController.java</td>
+<td class="LineOfCaller">50</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:23:42,535</td>
+<td class="Message">拦截请求 &gt;&gt; /online/cgform/head/list ; 请求类型 &gt;&gt; GET . </td>
+<td class="MethodOfCaller">arround</td>
+<td class="FileOfCaller">PermissionDataAspect.java</td>
+<td class="LineOfCaller">71</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:23:42,543</td>
+<td class="Message">---查询过滤器，Query规则---field:copy_type, rule:=, value:0</td>
+<td class="MethodOfCaller">addEasyQuery</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">648</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:23:42,544</td>
+<td class="Message">排序规则&gt;&gt;列:createTime,排序方式:desc</td>
+<td class="MethodOfCaller">doMultiFieldsOrder</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">241</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:25:10,568</td>
+<td class="Message">拦截请求 &gt;&gt; /online/cgreport/api/getColumnsAndData/6c7f59741c814347905a938f06ee003c ; 请求类型 &gt;&gt; GET . </td>
+<td class="MethodOfCaller">arround</td>
+<td class="FileOfCaller">PermissionDataAspect.java</td>
+<td class="LineOfCaller">71</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:25:10,581</td>
+<td class="Message">--获取sql信息--</td>
+<td class="MethodOfCaller">isPass</td>
+<td class="FileOfCaller">AbstractQueryBlackListHandler.java</td>
+<td class="LineOfCaller">55</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:25:22,985</td>
+<td class="Message">排序规则&gt;&gt;列:createTime,排序方式:desc</td>
+<td class="MethodOfCaller">doMultiFieldsOrder</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">241</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:25:22,986</td>
+<td class="Message">排序规则&gt;&gt;列:null,排序方式:null</td>
+<td class="MethodOfCaller">doMultiFieldsOrder</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">241</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:29:00,734</td>
+<td class="Message">拦截请求 &gt;&gt; /online/cgform/head/list ; 请求类型 &gt;&gt; GET . </td>
+<td class="MethodOfCaller">arround</td>
+<td class="FileOfCaller">PermissionDataAspect.java</td>
+<td class="LineOfCaller">71</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:29:00,741</td>
+<td class="Message">---查询过滤器，Query规则---field:copy_type, rule:=, value:0</td>
+<td class="MethodOfCaller">addEasyQuery</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">648</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:29:00,742</td>
+<td class="Message">排序规则&gt;&gt;列:createTime,排序方式:desc</td>
+<td class="MethodOfCaller">doMultiFieldsOrder</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">241</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:29:10,360</td>
+<td class="Message">排序规则&gt;&gt;列:null,排序方式:null</td>
+<td class="MethodOfCaller">doMultiFieldsOrder</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">241</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:29:10,360</td>
+<td class="Message">排序规则&gt;&gt;列:createTime,排序方式:desc</td>
+<td class="MethodOfCaller">doMultiFieldsOrder</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">241</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:29:16,461</td>
+<td class="Message">排序规则&gt;&gt;列:createTime,排序方式:desc</td>
+<td class="MethodOfCaller">doMultiFieldsOrder</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">241</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:29:19,179</td>
+<td class="Message">拦截请求 &gt;&gt; /online/cgform/head/list ; 请求类型 &gt;&gt; GET . </td>
+<td class="MethodOfCaller">arround</td>
+<td class="FileOfCaller">PermissionDataAspect.java</td>
+<td class="LineOfCaller">71</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:29:19,184</td>
+<td class="Message">---查询过滤器，Query规则---field:copy_type, rule:=, value:0</td>
+<td class="MethodOfCaller">addEasyQuery</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">648</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:29:19,185</td>
+<td class="Message">排序规则&gt;&gt;列:createTime,排序方式:desc</td>
+<td class="MethodOfCaller">doMultiFieldsOrder</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">241</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:29:44,122</td>
+<td class="Message">排序规则&gt;&gt;列:createTime,排序方式:desc</td>
+<td class="MethodOfCaller">doMultiFieldsOrder</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">241</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:29:44,123</td>
+<td class="Message">排序规则&gt;&gt;列:null,排序方式:null</td>
+<td class="MethodOfCaller">doMultiFieldsOrder</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">241</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:29:55,368</td>
+<td class="Message"> JmReport Base Config JSON : org.jeecg.modules.jmreport.config.JmReportBaseConfig$$EnhancerBySpringCGLIB$$5ad484bc@18074ab3</td>
+<td class="MethodOfCaller">a</td>
+<td class="FileOfCaller">DesignReportController.java</td>
+<td class="LineOfCaller">620</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:29:55,368</td>
+<td class="Message"> JmReport Base Config JSON : org.jeecg.modules.jmreport.config.JmReportBaseConfig$$EnhancerBySpringCGLIB$$5ad484bc@18074ab3</td>
+<td class="MethodOfCaller">a</td>
+<td class="FileOfCaller">DesignReportController.java</td>
+<td class="LineOfCaller">620</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:29:55,368</td>
+<td class="Message">freemarker base: /jeecg-boot</td>
+<td class="MethodOfCaller">a</td>
+<td class="FileOfCaller">DesignReportController.java</td>
+<td class="LineOfCaller">621</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:29:55,368</td>
+<td class="Message">freemarker base: /jeecg-boot</td>
+<td class="MethodOfCaller">a</td>
+<td class="FileOfCaller">DesignReportController.java</td>
+<td class="LineOfCaller">621</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:29:55,369</td>
+<td class="Message">freemarker customPrePath: </td>
+<td class="MethodOfCaller">a</td>
+<td class="FileOfCaller">DesignReportController.java</td>
+<td class="LineOfCaller">622</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:29:55,369</td>
+<td class="Message">freemarker customPrePath: </td>
+<td class="MethodOfCaller">a</td>
+<td class="FileOfCaller">DesignReportController.java</td>
+<td class="LineOfCaller">622</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:29:55,865</td>
+<td class="Message">排序规则&gt;&gt;列:createTime,排序方式:desc</td>
+<td class="MethodOfCaller">doMultiFieldsOrder</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">241</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:29:57,606</td>
+<td class="Message">page countsql===&gt; SELECT count(0) FROM jimu_report jr WHERE 1 = 1 AND jr.TYPE = :jimuReport.type AND jr.DEL_FLAG = :jimuReport.delFlag AND jr.TEMPLATE = :jimuReport.template</td>
+<td class="MethodOfCaller">getReturnMinidaoResult</td>
+<td class="FileOfCaller">MiniDaoHandler.java</td>
+<td class="LineOfCaller">424</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:29:57,627</td>
+<td class="Message">page executeSql===&gt; SELECT jr.ID,jr.NAME,jr.CODE,jr.TYPE,jr.template,jr.thumb FROM jimu_report jr WHERE 1=1 and jr.TYPE = :jimuReport.type and jr.DEL_FLAG = :jimuReport.delFlag and jr.TEMPLATE = :jimuReport.template ORDER BY jr.create_time DESC
+ LIMIT 10 </td>
+<td class="MethodOfCaller">getReturnMinidaoResult</td>
+<td class="FileOfCaller">MiniDaoHandler.java</td>
+<td class="LineOfCaller">435</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:30:00,094</td>
+<td class="Message">进入设计器页面，saas: false ,登录Token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NzEyNTc1OTAsInVzZXJuYW1lIjoiYWRtaW4ifQ.GzJop7VAfj8U2vy2kN47VmpUb1XXivl-tevqk23z3WE</td>
+<td class="MethodOfCaller">a</td>
+<td class="FileOfCaller">DesignReportController.java</td>
+<td class="LineOfCaller">245</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:30:00,102</td>
+<td class="Message"> JmReport Base Config JSON : org.jeecg.modules.jmreport.config.JmReportBaseConfig$$EnhancerBySpringCGLIB$$5ad484bc@18074ab3</td>
+<td class="MethodOfCaller">a</td>
+<td class="FileOfCaller">DesignReportController.java</td>
+<td class="LineOfCaller">620</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:30:00,103</td>
+<td class="Message">freemarker base: /jeecg-boot</td>
+<td class="MethodOfCaller">a</td>
+<td class="FileOfCaller">DesignReportController.java</td>
+<td class="LineOfCaller">621</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:30:00,103</td>
+<td class="Message">freemarker customPrePath: </td>
+<td class="MethodOfCaller">a</td>
+<td class="FileOfCaller">DesignReportController.java</td>
+<td class="LineOfCaller">622</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:30:00,962</td>
+<td class="Message">page countsql===&gt; SELECT count(0) FROM jimu_dict sd WHERE 1 = 1 AND sd.DEL_FLAG = :reportDict.delFlag</td>
+<td class="MethodOfCaller">getReturnMinidaoResult</td>
+<td class="FileOfCaller">MiniDaoHandler.java</td>
+<td class="LineOfCaller">424</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:30:00,963</td>
+<td class="Message">page countsql===&gt; SELECT count(0) FROM jimu_report_data_source jrds WHERE 1 = 1</td>
+<td class="MethodOfCaller">getReturnMinidaoResult</td>
+<td class="FileOfCaller">MiniDaoHandler.java</td>
+<td class="LineOfCaller">424</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:30:00,965</td>
+<td class="Message">page executeSql===&gt; SELECT * FROM jimu_report_data_source jrds where 1=1
+ LIMIT 10 </td>
+<td class="MethodOfCaller">getReturnMinidaoResult</td>
+<td class="FileOfCaller">MiniDaoHandler.java</td>
+<td class="LineOfCaller">435</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:30:00,966</td>
+<td class="Message">page executeSql===&gt; SELECT * FROM jimu_dict sd where 1=1 and sd.DEL_FLAG = :reportDict.delFlag order by create_time desc
+ LIMIT 10 </td>
+<td class="MethodOfCaller">getReturnMinidaoResult</td>
+<td class="FileOfCaller">MiniDaoHandler.java</td>
+<td class="LineOfCaller">435</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:30:04,193</td>
+<td class="Message">page countsql===&gt; SELECT count(0) FROM jimu_report jr WHERE 1 = 1 AND jr.TYPE = :jimuReport.type AND jr.DEL_FLAG = :jimuReport.delFlag AND jr.TEMPLATE = :jimuReport.template</td>
+<td class="MethodOfCaller">getReturnMinidaoResult</td>
+<td class="FileOfCaller">MiniDaoHandler.java</td>
+<td class="LineOfCaller">424</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:30:04,195</td>
+<td class="Message">page executeSql===&gt; SELECT jr.ID,jr.NAME,jr.CODE,jr.TYPE,jr.template,jr.thumb FROM jimu_report jr WHERE 1=1 and jr.TYPE = :jimuReport.type and jr.DEL_FLAG = :jimuReport.delFlag and jr.TEMPLATE = :jimuReport.template ORDER BY jr.create_time DESC
+ LIMIT 10 </td>
+<td class="MethodOfCaller">getReturnMinidaoResult</td>
+<td class="FileOfCaller">MiniDaoHandler.java</td>
+<td class="LineOfCaller">435</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:30:05,828</td>
+<td class="Message">page countsql===&gt; SELECT count(0) FROM jimu_report jr WHERE 1 = 1 AND jr.TYPE = :jimuReport.type AND jr.DEL_FLAG = :jimuReport.delFlag AND jr.TEMPLATE = :jimuReport.template</td>
+<td class="MethodOfCaller">getReturnMinidaoResult</td>
+<td class="FileOfCaller">MiniDaoHandler.java</td>
+<td class="LineOfCaller">424</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:30:05,830</td>
+<td class="Message">page executeSql===&gt; SELECT jr.ID,jr.NAME,jr.CODE,jr.TYPE,jr.template,jr.thumb FROM jimu_report jr WHERE 1=1 and jr.TYPE = :jimuReport.type and jr.DEL_FLAG = :jimuReport.delFlag and jr.TEMPLATE = :jimuReport.template ORDER BY jr.create_time DESC
+ LIMIT 10 </td>
+<td class="MethodOfCaller">getReturnMinidaoResult</td>
+<td class="FileOfCaller">MiniDaoHandler.java</td>
+<td class="LineOfCaller">435</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:30:07,325</td>
+<td class="Message">page countsql===&gt; SELECT count(0) FROM jimu_report jr WHERE 1 = 1 AND jr.TYPE = :jimuReport.type AND jr.DEL_FLAG = :jimuReport.delFlag AND jr.TEMPLATE = :jimuReport.template</td>
+<td class="MethodOfCaller">getReturnMinidaoResult</td>
+<td class="FileOfCaller">MiniDaoHandler.java</td>
+<td class="LineOfCaller">424</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:30:07,326</td>
+<td class="Message">page executeSql===&gt; SELECT jr.ID,jr.NAME,jr.CODE,jr.TYPE,jr.template,jr.thumb FROM jimu_report jr WHERE 1=1 and jr.TYPE = :jimuReport.type and jr.DEL_FLAG = :jimuReport.delFlag and jr.TEMPLATE = :jimuReport.template ORDER BY jr.create_time DESC
+ LIMIT 10 </td>
+<td class="MethodOfCaller">getReturnMinidaoResult</td>
+<td class="FileOfCaller">MiniDaoHandler.java</td>
+<td class="LineOfCaller">435</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:30:09,373</td>
+<td class="Message">page countsql===&gt; SELECT count(0) FROM jimu_report jr WHERE 1 = 1 AND jr.TYPE = :jimuReport.type AND jr.DEL_FLAG = :jimuReport.delFlag AND jr.TEMPLATE = :jimuReport.template</td>
+<td class="MethodOfCaller">getReturnMinidaoResult</td>
+<td class="FileOfCaller">MiniDaoHandler.java</td>
+<td class="LineOfCaller">424</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:30:09,376</td>
+<td class="Message">page executeSql===&gt; SELECT jr.ID,jr.NAME,jr.CODE,jr.TYPE,jr.template,jr.thumb FROM jimu_report jr WHERE 1=1 and jr.TYPE = :jimuReport.type and jr.DEL_FLAG = :jimuReport.delFlag and jr.TEMPLATE = :jimuReport.template ORDER BY jr.create_time DESC
+ LIMIT 10 </td>
+<td class="MethodOfCaller">getReturnMinidaoResult</td>
+<td class="FileOfCaller">MiniDaoHandler.java</td>
+<td class="LineOfCaller">435</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:30:10,245</td>
+<td class="Message">page countsql===&gt; SELECT count(0) FROM jimu_report jr WHERE 1 = 1 AND jr.TYPE = :jimuReport.type AND jr.DEL_FLAG = :jimuReport.delFlag AND jr.TEMPLATE = :jimuReport.template</td>
+<td class="MethodOfCaller">getReturnMinidaoResult</td>
+<td class="FileOfCaller">MiniDaoHandler.java</td>
+<td class="LineOfCaller">424</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:30:10,247</td>
+<td class="Message">page executeSql===&gt; SELECT jr.ID,jr.NAME,jr.CODE,jr.TYPE,jr.template,jr.thumb FROM jimu_report jr WHERE 1=1 and jr.TYPE = :jimuReport.type and jr.DEL_FLAG = :jimuReport.delFlag and jr.TEMPLATE = :jimuReport.template ORDER BY jr.create_time DESC
+ LIMIT 10 </td>
+<td class="MethodOfCaller">getReturnMinidaoResult</td>
+<td class="FileOfCaller">MiniDaoHandler.java</td>
+<td class="LineOfCaller">435</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:30:11,319</td>
+<td class="Message">进入设计器页面，saas: false ,登录Token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NzEyNTc1OTAsInVzZXJuYW1lIjoiYWRtaW4ifQ.GzJop7VAfj8U2vy2kN47VmpUb1XXivl-tevqk23z3WE</td>
+<td class="MethodOfCaller">a</td>
+<td class="FileOfCaller">DesignReportController.java</td>
+<td class="LineOfCaller">245</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:30:11,322</td>
+<td class="Message"> JmReport Base Config JSON : org.jeecg.modules.jmreport.config.JmReportBaseConfig$$EnhancerBySpringCGLIB$$5ad484bc@18074ab3</td>
+<td class="MethodOfCaller">a</td>
+<td class="FileOfCaller">DesignReportController.java</td>
+<td class="LineOfCaller">620</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:30:11,323</td>
+<td class="Message">freemarker base: /jeecg-boot</td>
+<td class="MethodOfCaller">a</td>
+<td class="FileOfCaller">DesignReportController.java</td>
+<td class="LineOfCaller">621</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:30:11,323</td>
+<td class="Message">freemarker customPrePath: </td>
+<td class="MethodOfCaller">a</td>
+<td class="FileOfCaller">DesignReportController.java</td>
+<td class="LineOfCaller">622</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:30:12,005</td>
+<td class="Message">page countsql===&gt; SELECT count(0) FROM jimu_report_data_source jrds WHERE 1 = 1</td>
+<td class="MethodOfCaller">getReturnMinidaoResult</td>
+<td class="FileOfCaller">MiniDaoHandler.java</td>
+<td class="LineOfCaller">424</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:30:12,005</td>
+<td class="Message">page countsql===&gt; SELECT count(0) FROM jimu_dict sd WHERE 1 = 1 AND sd.DEL_FLAG = :reportDict.delFlag</td>
+<td class="MethodOfCaller">getReturnMinidaoResult</td>
+<td class="FileOfCaller">MiniDaoHandler.java</td>
+<td class="LineOfCaller">424</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:30:12,007</td>
+<td class="Message">page executeSql===&gt; SELECT * FROM jimu_dict sd where 1=1 and sd.DEL_FLAG = :reportDict.delFlag order by create_time desc
+ LIMIT 10 </td>
+<td class="MethodOfCaller">getReturnMinidaoResult</td>
+<td class="FileOfCaller">MiniDaoHandler.java</td>
+<td class="LineOfCaller">435</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:30:12,007</td>
+<td class="Message">page executeSql===&gt; SELECT * FROM jimu_report_data_source jrds where 1=1
+ LIMIT 10 </td>
+<td class="MethodOfCaller">getReturnMinidaoResult</td>
+<td class="FileOfCaller">MiniDaoHandler.java</td>
+<td class="LineOfCaller">435</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:30:16,192</td>
+<td class="Message">进入设计器页面，saas: false ,登录Token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NzEyNTc1OTAsInVzZXJuYW1lIjoiYWRtaW4ifQ.GzJop7VAfj8U2vy2kN47VmpUb1XXivl-tevqk23z3WE</td>
+<td class="MethodOfCaller">a</td>
+<td class="FileOfCaller">DesignReportController.java</td>
+<td class="LineOfCaller">245</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:30:16,195</td>
+<td class="Message"> JmReport Base Config JSON : org.jeecg.modules.jmreport.config.JmReportBaseConfig$$EnhancerBySpringCGLIB$$5ad484bc@18074ab3</td>
+<td class="MethodOfCaller">a</td>
+<td class="FileOfCaller">DesignReportController.java</td>
+<td class="LineOfCaller">620</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:30:16,196</td>
+<td class="Message">freemarker base: /jeecg-boot</td>
+<td class="MethodOfCaller">a</td>
+<td class="FileOfCaller">DesignReportController.java</td>
+<td class="LineOfCaller">621</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:30:16,196</td>
+<td class="Message">freemarker customPrePath: </td>
+<td class="MethodOfCaller">a</td>
+<td class="FileOfCaller">DesignReportController.java</td>
+<td class="LineOfCaller">622</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:30:16,776</td>
+<td class="Message">page countsql===&gt; SELECT count(0) FROM jimu_dict sd WHERE 1 = 1 AND sd.DEL_FLAG = :reportDict.delFlag</td>
+<td class="MethodOfCaller">getReturnMinidaoResult</td>
+<td class="FileOfCaller">MiniDaoHandler.java</td>
+<td class="LineOfCaller">424</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:30:16,778</td>
+<td class="Message">page executeSql===&gt; SELECT * FROM jimu_dict sd where 1=1 and sd.DEL_FLAG = :reportDict.delFlag order by create_time desc
+ LIMIT 10 </td>
+<td class="MethodOfCaller">getReturnMinidaoResult</td>
+<td class="FileOfCaller">MiniDaoHandler.java</td>
+<td class="LineOfCaller">435</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:30:16,778</td>
+<td class="Message">page countsql===&gt; SELECT count(0) FROM jimu_report_data_source jrds WHERE 1 = 1</td>
+<td class="MethodOfCaller">getReturnMinidaoResult</td>
+<td class="FileOfCaller">MiniDaoHandler.java</td>
+<td class="LineOfCaller">424</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:30:16,785</td>
+<td class="Message">page executeSql===&gt; SELECT * FROM jimu_report_data_source jrds where 1=1
+ LIMIT 10 </td>
+<td class="MethodOfCaller">getReturnMinidaoResult</td>
+<td class="FileOfCaller">MiniDaoHandler.java</td>
+<td class="LineOfCaller">435</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:33:38,996</td>
+<td class="Message">排序规则&gt;&gt;列:createTime,排序方式:desc</td>
+<td class="MethodOfCaller">doMultiFieldsOrder</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">241</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:33:40,447</td>
+<td class="Message">拦截请求 &gt;&gt; /online/cgreport/api/getColumnsAndData/6c7f59741c814347905a938f06ee003c ; 请求类型 &gt;&gt; GET . </td>
+<td class="MethodOfCaller">arround</td>
+<td class="FileOfCaller">PermissionDataAspect.java</td>
+<td class="LineOfCaller">71</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:33:40,461</td>
+<td class="Message">--获取sql信息--</td>
+<td class="MethodOfCaller">isPass</td>
+<td class="FileOfCaller">AbstractQueryBlackListHandler.java</td>
+<td class="LineOfCaller">55</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:33:45,636</td>
+<td class="Message">拦截请求 &gt;&gt; /online/cgreport/api/getColumnsAndData/1260179852088135681 ; 请求类型 &gt;&gt; GET . </td>
+<td class="MethodOfCaller">arround</td>
+<td class="FileOfCaller">PermissionDataAspect.java</td>
+<td class="LineOfCaller">71</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:33:45,649</td>
+<td class="Message">--获取sql信息--</td>
+<td class="MethodOfCaller">isPass</td>
+<td class="FileOfCaller">AbstractQueryBlackListHandler.java</td>
+<td class="LineOfCaller">55</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:33:47,997</td>
+<td class="Message">排序规则&gt;&gt;列:null,排序方式:null</td>
+<td class="MethodOfCaller">doMultiFieldsOrder</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">241</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:33:48,003</td>
+<td class="Message">排序规则&gt;&gt;列:createTime,排序方式:desc</td>
+<td class="MethodOfCaller">doMultiFieldsOrder</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">241</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:33:51,537</td>
+<td class="Message">拦截请求 &gt;&gt; /online/cgform/head/list ; 请求类型 &gt;&gt; GET . </td>
+<td class="MethodOfCaller">arround</td>
+<td class="FileOfCaller">PermissionDataAspect.java</td>
+<td class="LineOfCaller">71</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:33:51,543</td>
+<td class="Message">---查询过滤器，Query规则---field:copy_type, rule:=, value:0</td>
+<td class="MethodOfCaller">addEasyQuery</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">648</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:33:51,544</td>
+<td class="Message">排序规则&gt;&gt;列:createTime,排序方式:desc</td>
+<td class="MethodOfCaller">doMultiFieldsOrder</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">241</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:34:55,489</td>
+<td class="Message">拦截请求 &gt;&gt; /online/cgreport/api/getColumnsAndData/6c7f59741c814347905a938f06ee003c ; 请求类型 &gt;&gt; GET . </td>
+<td class="MethodOfCaller">arround</td>
+<td class="FileOfCaller">PermissionDataAspect.java</td>
+<td class="LineOfCaller">71</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:34:55,508</td>
+<td class="Message">--获取sql信息--</td>
+<td class="MethodOfCaller">isPass</td>
+<td class="FileOfCaller">AbstractQueryBlackListHandler.java</td>
+<td class="LineOfCaller">55</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:34:56,537</td>
+<td class="Message"> JmReport Base Config JSON : org.jeecg.modules.jmreport.config.JmReportBaseConfig$$EnhancerBySpringCGLIB$$5ad484bc@18074ab3</td>
+<td class="MethodOfCaller">a</td>
+<td class="FileOfCaller">DesignReportController.java</td>
+<td class="LineOfCaller">620</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:34:56,538</td>
+<td class="Message">freemarker base: /jeecg-boot</td>
+<td class="MethodOfCaller">a</td>
+<td class="FileOfCaller">DesignReportController.java</td>
+<td class="LineOfCaller">621</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:34:56,537</td>
+<td class="Message"> JmReport Base Config JSON : org.jeecg.modules.jmreport.config.JmReportBaseConfig$$EnhancerBySpringCGLIB$$5ad484bc@18074ab3</td>
+<td class="MethodOfCaller">a</td>
+<td class="FileOfCaller">DesignReportController.java</td>
+<td class="LineOfCaller">620</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:34:56,538</td>
+<td class="Message">freemarker base: /jeecg-boot</td>
+<td class="MethodOfCaller">a</td>
+<td class="FileOfCaller">DesignReportController.java</td>
+<td class="LineOfCaller">621</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:34:56,538</td>
+<td class="Message">freemarker customPrePath: </td>
+<td class="MethodOfCaller">a</td>
+<td class="FileOfCaller">DesignReportController.java</td>
+<td class="LineOfCaller">622</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:34:56,538</td>
+<td class="Message">freemarker customPrePath: </td>
+<td class="MethodOfCaller">a</td>
+<td class="FileOfCaller">DesignReportController.java</td>
+<td class="LineOfCaller">622</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:34:57,150</td>
+<td class="Message">拦截请求 &gt;&gt; /online/cgreport/api/getColumnsAndData/6c7f59741c814347905a938f06ee003c ; 请求类型 &gt;&gt; GET . </td>
+<td class="MethodOfCaller">arround</td>
+<td class="FileOfCaller">PermissionDataAspect.java</td>
+<td class="LineOfCaller">71</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:34:57,167</td>
+<td class="Message">--获取sql信息--</td>
+<td class="MethodOfCaller">isPass</td>
+<td class="FileOfCaller">AbstractQueryBlackListHandler.java</td>
+<td class="LineOfCaller">55</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:34:58,155</td>
+<td class="Message">--------进入show方法-----------, id = 1352160857479581696</td>
+<td class="MethodOfCaller">a</td>
+<td class="FileOfCaller">DesignReportController.java</td>
+<td class="LineOfCaller">379</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:34:58,208</td>
+<td class="Message">  原始 apiUrl=http://localhost:8080/jeecg-boot/sys/actuator/redis/infoForReport , token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NzEyNTc1OTAsInVzZXJuYW1lIjoiYWRtaW4ifQ.GzJop7VAfj8U2vy2kN47VmpUb1XXivl-tevqk23z3WE</td>
+<td class="MethodOfCaller">getApiData</td>
+<td class="FileOfCaller">JimuReportServiceImpl.java</td>
+<td class="LineOfCaller">3044</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:34:58,209</td>
+<td class="Message">  替换${} apiUrl=http://localhost:8080/jeecg-boot/sys/actuator/redis/infoForReport</td>
+<td class="MethodOfCaller">getApiData</td>
+<td class="FileOfCaller">JimuReportServiceImpl.java</td>
+<td class="LineOfCaller">3048</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:34:58,675</td>
+<td class="Message">  原始 apiUrl=http://localhost:8080/jeecg-boot/sys/actuator/redis/memoryForReport , token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NzEyNTc1OTAsInVzZXJuYW1lIjoiYWRtaW4ifQ.GzJop7VAfj8U2vy2kN47VmpUb1XXivl-tevqk23z3WE</td>
+<td class="MethodOfCaller">getApiData</td>
+<td class="FileOfCaller">JimuReportServiceImpl.java</td>
+<td class="LineOfCaller">3044</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:34:58,675</td>
+<td class="Message">  替换${} apiUrl=http://localhost:8080/jeecg-boot/sys/actuator/redis/memoryForReport</td>
+<td class="MethodOfCaller">getApiData</td>
+<td class="FileOfCaller">JimuReportServiceImpl.java</td>
+<td class="LineOfCaller">3048</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:34:58,964</td>
+<td class="Message">  原始 apiUrl=http://localhost:8080/jeecg-boot/sys/actuator/redis/keysSizeForReport , token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NzEyNTc1OTAsInVzZXJuYW1lIjoiYWRtaW4ifQ.GzJop7VAfj8U2vy2kN47VmpUb1XXivl-tevqk23z3WE</td>
+<td class="MethodOfCaller">getApiData</td>
+<td class="FileOfCaller">JimuReportServiceImpl.java</td>
+<td class="LineOfCaller">3044</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:34:58,964</td>
+<td class="Message">  替换${} apiUrl=http://localhost:8080/jeecg-boot/sys/actuator/redis/keysSizeForReport</td>
+<td class="MethodOfCaller">getApiData</td>
+<td class="FileOfCaller">JimuReportServiceImpl.java</td>
+<td class="LineOfCaller">3048</td>
+</tr>
+
+<tr class="warn even">
+<td class="Level">WARN</td>
+<td class="Date">2022-12-17 13:34:59,322</td>
+<td class="Message">类没定义！</td>
+<td class="MethodOfCaller">&lt;clinit&gt;</td>
+<td class="FileOfCaller">ExpressUtil.java</td>
+<td class="LineOfCaller">244</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:45:38,243</td>
+<td class="Message"> JmReport Base Config JSON : org.jeecg.modules.jmreport.config.JmReportBaseConfig$$EnhancerBySpringCGLIB$$5ad484bc@18074ab3</td>
+<td class="MethodOfCaller">a</td>
+<td class="FileOfCaller">DesignReportController.java</td>
+<td class="LineOfCaller">620</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:45:38,243</td>
+<td class="Message"> JmReport Base Config JSON : org.jeecg.modules.jmreport.config.JmReportBaseConfig$$EnhancerBySpringCGLIB$$5ad484bc@18074ab3</td>
+<td class="MethodOfCaller">a</td>
+<td class="FileOfCaller">DesignReportController.java</td>
+<td class="LineOfCaller">620</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:45:38,244</td>
+<td class="Message">freemarker base: /jeecg-boot</td>
+<td class="MethodOfCaller">a</td>
+<td class="FileOfCaller">DesignReportController.java</td>
+<td class="LineOfCaller">621</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:45:38,244</td>
+<td class="Message">freemarker base: /jeecg-boot</td>
+<td class="MethodOfCaller">a</td>
+<td class="FileOfCaller">DesignReportController.java</td>
+<td class="LineOfCaller">621</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:45:38,244</td>
+<td class="Message">freemarker customPrePath: </td>
+<td class="MethodOfCaller">a</td>
+<td class="FileOfCaller">DesignReportController.java</td>
+<td class="LineOfCaller">622</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:45:38,244</td>
+<td class="Message">freemarker customPrePath: </td>
+<td class="MethodOfCaller">a</td>
+<td class="FileOfCaller">DesignReportController.java</td>
+<td class="LineOfCaller">622</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:45:38,840</td>
+<td class="Message">拦截请求 &gt;&gt; /online/cgreport/api/getColumnsAndData/6c7f59741c814347905a938f06ee003c ; 请求类型 &gt;&gt; GET . </td>
+<td class="MethodOfCaller">arround</td>
+<td class="FileOfCaller">PermissionDataAspect.java</td>
+<td class="LineOfCaller">71</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:45:38,852</td>
+<td class="Message">--获取sql信息--</td>
+<td class="MethodOfCaller">isPass</td>
+<td class="FileOfCaller">AbstractQueryBlackListHandler.java</td>
+<td class="LineOfCaller">55</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:45:39,838</td>
+<td class="Message">--------进入show方法-----------, id = 1352160857479581696</td>
+<td class="MethodOfCaller">a</td>
+<td class="FileOfCaller">DesignReportController.java</td>
+<td class="LineOfCaller">379</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:45:39,889</td>
+<td class="Message">  原始 apiUrl=http://localhost:8080/jeecg-boot/sys/actuator/redis/infoForReport , token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NzEyNTc1OTAsInVzZXJuYW1lIjoiYWRtaW4ifQ.GzJop7VAfj8U2vy2kN47VmpUb1XXivl-tevqk23z3WE</td>
+<td class="MethodOfCaller">getApiData</td>
+<td class="FileOfCaller">JimuReportServiceImpl.java</td>
+<td class="LineOfCaller">3044</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:45:39,890</td>
+<td class="Message">  替换${} apiUrl=http://localhost:8080/jeecg-boot/sys/actuator/redis/infoForReport</td>
+<td class="MethodOfCaller">getApiData</td>
+<td class="FileOfCaller">JimuReportServiceImpl.java</td>
+<td class="LineOfCaller">3048</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:45:40,000</td>
+<td class="Message">  原始 apiUrl=http://localhost:8080/jeecg-boot/sys/actuator/redis/memoryForReport , token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NzEyNTc1OTAsInVzZXJuYW1lIjoiYWRtaW4ifQ.GzJop7VAfj8U2vy2kN47VmpUb1XXivl-tevqk23z3WE</td>
+<td class="MethodOfCaller">getApiData</td>
+<td class="FileOfCaller">JimuReportServiceImpl.java</td>
+<td class="LineOfCaller">3044</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:45:40,000</td>
+<td class="Message">  替换${} apiUrl=http://localhost:8080/jeecg-boot/sys/actuator/redis/memoryForReport</td>
+<td class="MethodOfCaller">getApiData</td>
+<td class="FileOfCaller">JimuReportServiceImpl.java</td>
+<td class="LineOfCaller">3048</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:45:40,181</td>
+<td class="Message">  原始 apiUrl=http://localhost:8080/jeecg-boot/sys/actuator/redis/keysSizeForReport , token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NzEyNTc1OTAsInVzZXJuYW1lIjoiYWRtaW4ifQ.GzJop7VAfj8U2vy2kN47VmpUb1XXivl-tevqk23z3WE</td>
+<td class="MethodOfCaller">getApiData</td>
+<td class="FileOfCaller">JimuReportServiceImpl.java</td>
+<td class="LineOfCaller">3044</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:45:40,182</td>
+<td class="Message">  替换${} apiUrl=http://localhost:8080/jeecg-boot/sys/actuator/redis/keysSizeForReport</td>
+<td class="MethodOfCaller">getApiData</td>
+<td class="FileOfCaller">JimuReportServiceImpl.java</td>
+<td class="LineOfCaller">3048</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:45:45,478</td>
+<td class="Message">  原始 apiUrl=http://localhost:8080/jeecg-boot/sys/actuator/redis/keysSizeForReport?printAll=true , token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NzEyNTc1OTAsInVzZXJuYW1lIjoiYWRtaW4ifQ.GzJop7VAfj8U2vy2kN47VmpUb1XXivl-tevqk23z3WE</td>
+<td class="MethodOfCaller">getApiData</td>
+<td class="FileOfCaller">JimuReportServiceImpl.java</td>
+<td class="LineOfCaller">3044</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:45:45,478</td>
+<td class="Message">  原始 apiUrl=http://localhost:8080/jeecg-boot/sys/actuator/redis/memoryForReport?printAll=true , token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NzEyNTc1OTAsInVzZXJuYW1lIjoiYWRtaW4ifQ.GzJop7VAfj8U2vy2kN47VmpUb1XXivl-tevqk23z3WE</td>
+<td class="MethodOfCaller">getApiData</td>
+<td class="FileOfCaller">JimuReportServiceImpl.java</td>
+<td class="LineOfCaller">3044</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:45:45,479</td>
+<td class="Message">  替换${} apiUrl=http://localhost:8080/jeecg-boot/sys/actuator/redis/keysSizeForReport?printAll=true</td>
+<td class="MethodOfCaller">getApiData</td>
+<td class="FileOfCaller">JimuReportServiceImpl.java</td>
+<td class="LineOfCaller">3048</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:45:45,479</td>
+<td class="Message">  替换${} apiUrl=http://localhost:8080/jeecg-boot/sys/actuator/redis/memoryForReport?printAll=true</td>
+<td class="MethodOfCaller">getApiData</td>
+<td class="FileOfCaller">JimuReportServiceImpl.java</td>
+<td class="LineOfCaller">3048</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:45:50,466</td>
+<td class="Message">  原始 apiUrl=http://localhost:8080/jeecg-boot/sys/actuator/redis/memoryForReport?printAll=true , token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NzEyNTc1OTAsInVzZXJuYW1lIjoiYWRtaW4ifQ.GzJop7VAfj8U2vy2kN47VmpUb1XXivl-tevqk23z3WE</td>
+<td class="MethodOfCaller">getApiData</td>
+<td class="FileOfCaller">JimuReportServiceImpl.java</td>
+<td class="LineOfCaller">3044</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:45:50,466</td>
+<td class="Message">  原始 apiUrl=http://localhost:8080/jeecg-boot/sys/actuator/redis/keysSizeForReport?printAll=true , token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NzEyNTc1OTAsInVzZXJuYW1lIjoiYWRtaW4ifQ.GzJop7VAfj8U2vy2kN47VmpUb1XXivl-tevqk23z3WE</td>
+<td class="MethodOfCaller">getApiData</td>
+<td class="FileOfCaller">JimuReportServiceImpl.java</td>
+<td class="LineOfCaller">3044</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:45:50,467</td>
+<td class="Message">  替换${} apiUrl=http://localhost:8080/jeecg-boot/sys/actuator/redis/memoryForReport?printAll=true</td>
+<td class="MethodOfCaller">getApiData</td>
+<td class="FileOfCaller">JimuReportServiceImpl.java</td>
+<td class="LineOfCaller">3048</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 13:45:50,467</td>
+<td class="Message">  替换${} apiUrl=http://localhost:8080/jeecg-boot/sys/actuator/redis/keysSizeForReport?printAll=true</td>
+<td class="MethodOfCaller">getApiData</td>
+<td class="FileOfCaller">JimuReportServiceImpl.java</td>
+<td class="LineOfCaller">3048</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 15:04:56,840</td>
+<td class="Message">【系统 WebSocket】连接断开，总数为:0</td>
+<td class="MethodOfCaller">onClose</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">52</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 15:04:56,841</td>
+<td class="Message">【系统 WebSocket】连接断开，总数为:0</td>
+<td class="MethodOfCaller">onClose</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">52</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 15:05:00,324</td>
+<td class="Message">【系统 WebSocket】有新的连接，总数为:1</td>
+<td class="MethodOfCaller">onOpen</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">43</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 15:05:00,839</td>
+<td class="Message">【系统 WebSocket】有新的连接，总数为:1</td>
+<td class="MethodOfCaller">onOpen</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">43</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 15:05:00,850</td>
+<td class="Message">拦截请求 &gt;&gt; /online/cgform/head/list ; 请求类型 &gt;&gt; GET . </td>
+<td class="MethodOfCaller">arround</td>
+<td class="FileOfCaller">PermissionDataAspect.java</td>
+<td class="LineOfCaller">71</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 15:05:00,857</td>
+<td class="Message">---查询过滤器，Query规则---field:copy_type, rule:=, value:0</td>
+<td class="MethodOfCaller">addEasyQuery</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">648</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 15:05:00,857</td>
+<td class="Message">排序规则&gt;&gt;列:createTime,排序方式:desc</td>
+<td class="MethodOfCaller">doMultiFieldsOrder</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">241</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 15:06:56,289</td>
+<td class="Message">【系统 WebSocket】连接断开，总数为:0</td>
+<td class="MethodOfCaller">onClose</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">52</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 15:06:56,290</td>
+<td class="Message">【系统 WebSocket】连接断开，总数为:0</td>
+<td class="MethodOfCaller">onClose</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">52</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 15:06:58,791</td>
+<td class="Message">【系统 WebSocket】有新的连接，总数为:1</td>
+<td class="MethodOfCaller">onOpen</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">43</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 15:06:59,673</td>
+<td class="Message">【系统 WebSocket】有新的连接，总数为:1</td>
+<td class="MethodOfCaller">onOpen</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">43</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 15:06:59,810</td>
+<td class="Message">拦截请求 &gt;&gt; /online/cgform/head/list ; 请求类型 &gt;&gt; GET . </td>
+<td class="MethodOfCaller">arround</td>
+<td class="FileOfCaller">PermissionDataAspect.java</td>
+<td class="LineOfCaller">71</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 15:06:59,823</td>
+<td class="Message">---查询过滤器，Query规则---field:copy_type, rule:=, value:0</td>
+<td class="MethodOfCaller">addEasyQuery</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">648</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 15:06:59,825</td>
+<td class="Message">排序规则&gt;&gt;列:createTime,排序方式:desc</td>
+<td class="MethodOfCaller">doMultiFieldsOrder</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">241</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 15:08:28,908</td>
+<td class="Message">【系统 WebSocket】有新的连接，总数为:1</td>
+<td class="MethodOfCaller">onOpen</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">43</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 15:08:31,005</td>
+<td class="Message">【系统 WebSocket】连接断开，总数为:0</td>
+<td class="MethodOfCaller">onClose</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">52</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 15:08:31,735</td>
+<td class="Message">【系统 WebSocket】连接断开，总数为:0</td>
+<td class="MethodOfCaller">onClose</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">52</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 15:08:37,606</td>
+<td class="Message">【系统 WebSocket】有新的连接，总数为:1</td>
+<td class="MethodOfCaller">onOpen</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">43</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 15:10:16,577</td>
+<td class="Message">【系统 WebSocket】连接断开，总数为:0</td>
+<td class="MethodOfCaller">onClose</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">52</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 15:10:16,855</td>
+<td class="Message">【系统 WebSocket】连接断开，总数为:0</td>
+<td class="MethodOfCaller">onClose</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">52</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 15:10:19,767</td>
+<td class="Message">【系统 WebSocket】有新的连接，总数为:1</td>
+<td class="MethodOfCaller">onOpen</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">43</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 15:10:20,135</td>
+<td class="Message">拦截请求 &gt;&gt; /online/cgform/head/list ; 请求类型 &gt;&gt; GET . </td>
+<td class="MethodOfCaller">arround</td>
+<td class="FileOfCaller">PermissionDataAspect.java</td>
+<td class="LineOfCaller">71</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 15:10:20,150</td>
+<td class="Message">---查询过滤器，Query规则---field:copy_type, rule:=, value:0</td>
+<td class="MethodOfCaller">addEasyQuery</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">648</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 15:10:20,151</td>
+<td class="Message">排序规则&gt;&gt;列:createTime,排序方式:desc</td>
+<td class="MethodOfCaller">doMultiFieldsOrder</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">241</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 15:10:20,840</td>
+<td class="Message">【系统 WebSocket】有新的连接，总数为:1</td>
+<td class="MethodOfCaller">onOpen</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">43</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 18:16:13,847</td>
+<td class="Message">【系统 WebSocket】连接断开，总数为:0</td>
+<td class="MethodOfCaller">onClose</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">52</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 18:16:14,197</td>
+<td class="Message">【系统 WebSocket】连接断开，总数为:0</td>
+<td class="MethodOfCaller">onClose</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">52</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 18:16:35,231</td>
+<td class="Message">Reconnecting, last destination was /121.40.112.76:6379</td>
+<td class="MethodOfCaller">log</td>
+<td class="FileOfCaller">AbstractInternalLogger.java</td>
+<td class="LineOfCaller">171</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 18:16:35,273</td>
+<td class="Message">Reconnected to 121.40.112.76:6379</td>
+<td class="MethodOfCaller">lambda$null$3</td>
+<td class="FileOfCaller">ReconnectionHandler.java</td>
+<td class="LineOfCaller">174</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 18:16:35,306</td>
+<td class="Message">获取验证码，Redis key = cc1d6304df1ad91024b074e4d891b317，checkCode = 93aL</td>
+<td class="MethodOfCaller">randomImage</td>
+<td class="FileOfCaller">LoginController.java</td>
+<td class="LineOfCaller">516</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 18:16:35,307</td>
+<td class="Message">获取验证码，Redis key = 34df595a0a94f7cd4fccebce1ec85687，checkCode = wgFc</td>
+<td class="MethodOfCaller">randomImage</td>
+<td class="FileOfCaller">LoginController.java</td>
+<td class="LineOfCaller">516</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 18:16:35,332</td>
+<td class="Message"> 用户名:  管理员,退出成功！ </td>
+<td class="MethodOfCaller">logout</td>
+<td class="FileOfCaller">LoginController.java</td>
+<td class="LineOfCaller">193</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 18:16:35,336</td>
+<td class="Message"> 用户名:  管理员,退出成功！ </td>
+<td class="MethodOfCaller">logout</td>
+<td class="FileOfCaller">LoginController.java</td>
+<td class="LineOfCaller">193</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 19:01:17,718</td>
+<td class="Message">获取验证码，Redis key = 89c680a97004841895cb9fa6ffc3773b，checkCode = ajMA</td>
+<td class="MethodOfCaller">randomImage</td>
+<td class="FileOfCaller">LoginController.java</td>
+<td class="LineOfCaller">516</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 19:01:18,447</td>
+<td class="Message">获取验证码，Redis key = 849a849672c5fadb6fce63ee34ec3962，checkCode = 55yp</td>
+<td class="MethodOfCaller">randomImage</td>
+<td class="FileOfCaller">LoginController.java</td>
+<td class="LineOfCaller">516</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 19:02:04,075</td>
+<td class="Message">获取验证码，Redis key = 3c5c009797eda1bd52f854aeeced35c6，checkCode = uVr6</td>
+<td class="MethodOfCaller">randomImage</td>
+<td class="FileOfCaller">LoginController.java</td>
+<td class="LineOfCaller">516</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 19:02:05,342</td>
+<td class="Message">获取验证码，Redis key = b6592d8352a54dfc0b3710b21710b413，checkCode = nvBK</td>
+<td class="MethodOfCaller">randomImage</td>
+<td class="FileOfCaller">LoginController.java</td>
+<td class="LineOfCaller">516</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 19:10:27,220</td>
+<td class="Message">获取验证码，Redis key = a8c98a8db5f5706fc68953f63fa67f0c，checkCode = AR3D</td>
+<td class="MethodOfCaller">randomImage</td>
+<td class="FileOfCaller">LoginController.java</td>
+<td class="LineOfCaller">516</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 19:10:31,736</td>
+<td class="Message">redis remove key:sys:cache:encrypt:user::admin</td>
+<td class="MethodOfCaller">remove</td>
+<td class="FileOfCaller">JeecgRedisCacheWriter.java</td>
+<td class="LineOfCaller">113</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 19:10:31,859</td>
+<td class="Message">加密操作，Aspect程序耗时：1ms</td>
+<td class="MethodOfCaller">around</td>
+<td class="FileOfCaller">SensitiveDataAspect.java</td>
+<td class="LineOfCaller">76</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 19:10:32,419</td>
+<td class="Message">【系统 WebSocket】有新的连接，总数为:1</td>
+<td class="MethodOfCaller">onOpen</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">43</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 19:13:53,573</td>
+<td class="Message">【系统 WebSocket】连接断开，总数为:0</td>
+<td class="MethodOfCaller">onClose</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">52</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 19:13:56,983</td>
+<td class="Message">【系统 WebSocket】有新的连接，总数为:1</td>
+<td class="MethodOfCaller">onOpen</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">43</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 20:42:06,129</td>
+<td class="Message">【系统 WebSocket】连接断开，总数为:0</td>
+<td class="MethodOfCaller">onClose</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">52</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 20:42:09,048</td>
+<td class="Message">【系统 WebSocket】有新的连接，总数为:1</td>
+<td class="MethodOfCaller">onOpen</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">43</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 20:42:10,232</td>
+<td class="Message">【系统 WebSocket】有新的连接，总数为:1</td>
+<td class="MethodOfCaller">onOpen</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">43</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 20:53:53,236</td>
+<td class="Message">【系统 WebSocket】连接断开，总数为:0</td>
+<td class="MethodOfCaller">onClose</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">52</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 20:53:53,425</td>
+<td class="Message">【系统 WebSocket】连接断开，总数为:0</td>
+<td class="MethodOfCaller">onClose</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">52</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 20:53:56,135</td>
+<td class="Message">【系统 WebSocket】有新的连接，总数为:1</td>
+<td class="MethodOfCaller">onOpen</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">43</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 20:53:57,134</td>
+<td class="Message">【系统 WebSocket】有新的连接，总数为:1</td>
+<td class="MethodOfCaller">onOpen</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">43</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 20:56:35,713</td>
+<td class="Message">【系统 WebSocket】连接断开，总数为:0</td>
+<td class="MethodOfCaller">onClose</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">52</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 20:56:35,714</td>
+<td class="Message">【系统 WebSocket】连接断开，总数为:0</td>
+<td class="MethodOfCaller">onClose</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">52</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 20:56:38,183</td>
+<td class="Message">【系统 WebSocket】有新的连接，总数为:1</td>
+<td class="MethodOfCaller">onOpen</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">43</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 20:56:39,446</td>
+<td class="Message">【系统 WebSocket】有新的连接，总数为:1</td>
+<td class="MethodOfCaller">onOpen</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">43</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 20:58:19,406</td>
+<td class="Message">【系统 WebSocket】连接断开，总数为:0</td>
+<td class="MethodOfCaller">onClose</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">52</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 20:58:19,407</td>
+<td class="Message">【系统 WebSocket】连接断开，总数为:0</td>
+<td class="MethodOfCaller">onClose</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">52</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 20:58:21,894</td>
+<td class="Message">【系统 WebSocket】有新的连接，总数为:1</td>
+<td class="MethodOfCaller">onOpen</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">43</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-12-17 20:58:23,153</td>
+<td class="Message">【系统 WebSocket】有新的连接，总数为:1</td>
+<td class="MethodOfCaller">onOpen</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">43</td>
+</tr>
+</table>
+</body></html>

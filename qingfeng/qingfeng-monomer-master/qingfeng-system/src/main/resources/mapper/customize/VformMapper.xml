@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qingfeng.customize.mapper.VformMapper">
+
+    <!--数据权限-->
+    <sql id="authPageSql">
+        <!-- 数据权限 -->
+        <if test="(obj.auth_organize_ids == null or obj.auth_organize_ids.size == 0) and (obj.auth_user != null and obj.auth_user != '')">
+            and a.create_user=#{obj.auth_user}
+        </if>
+        <if test="obj.auth_organize_ids != null and obj.auth_organize_ids.size > 0">
+            and (a.create_user=#{obj.auth_user} or a.create_organize in
+            <foreach collection="obj.auth_organize_ids" item="organize_id" open="(" separator="," close=")">
+                #{organize_id}
+            </foreach>
+            )
+        </if>
+    </sql>
+    <sql id="authPdSql">
+        <!-- 数据权限 -->
+        <if test="(auth_organize_ids == null or auth_organize_ids.size == 0) and (auth_user != null and auth_user != '')">
+            and a.create_user=#{auth_user}
+        </if>
+        <if test="auth_organize_ids != null and auth_organize_ids.size > 0">
+            and (a.create_user=#{auth_user} or a.create_organize in
+            <foreach collection="auth_organize_ids" item="organize_id" open="(" separator="," close=")">
+                #{organize_id}
+            </foreach>
+            )
+        </if>
+    </sql>
+
+    <!--查询数据分页列表-->
+    <select id="findListPage" parameterType="Vform" resultType="Vform">
+        select
+            a.id as "id",
+            a.type as "type",
+            a.table_type as "table_type",
+            a.classify as "classify",
+            a.table_comment as "table_comment",
+            a.table_name as "table_name",
+            a.table_content as "table_content",
+            a.order_by as "order_by",
+            a.remark as "remark",
+            a.create_time as "create_time",
+            a.create_user as "create_user",
+            a.create_organize as "create_organize",
+            a.update_user as "update_user",
+            a.update_time as "update_time"
+            from customize_vform a
+            where 1=1
+            <if test="obj.type != null and obj.type != ''">
+            and a.type = #{obj.type}
+            </if>
+            <if test="obj.classify != null and obj.classify != ''">
+            and a.classify = #{obj.classify}
+            </if>
+            <if test="obj.table_comment != null and obj.table_comment != ''">
+            and a.table_comment like concat('%',concat(#{obj.table_comment},'%'))
+            </if>
+            <if test="obj.table_name != null and obj.table_name != ''">
+            and a.table_name like concat('%',concat(#{obj.table_name},'%'))
+            </if>
+            <include refid="authPageSql"></include>
+            order by  a.create_time desc
+    </select>
+
+    <!--查询数据列表-->
+    <select id="findList" parameterType="Vform" resultType="Vform">
+        select
+            a.id as "id",
+            a.type as "type",
+            a.table_type as "table_type",
+            a.classify as "classify",
+            a.table_comment as "table_comment",
+            a.table_name as "table_name",
+            a.table_content as "table_content",
+            a.order_by as "order_by",
+            a.remark as "remark",
+            a.create_time as "create_time",
+            a.create_user as "create_user",
+            a.create_organize as "create_organize",
+            a.update_user as "update_user",
+            a.update_time as "update_time"
+            from customize_vform a
+            where 1=1
+            <if test="type != null and type != ''">
+            and a.type = #{type}
+            </if>
+            <if test="classify != null and classify != ''">
+            and a.classify = #{classify}
+            </if>
+            <if test="table_comment != null and table_comment != ''">
+            and a.table_comment like concat('%',concat(#{table_comment},'%'))
+            </if>
+            <if test="table_name != null and table_name != ''">
+            and a.table_name like concat('%',concat(#{table_name},'%'))
+            </if>
+            <include refid="authPdSql"></include>
+            order by  a.create_time desc
+    </select>
+
+    <!--创建表-->
+    <select id="createTable" parameterType="com.qingfeng.utils.PageData">
+        create table ${table_name}
+        (
+            id                   varchar(50) not null comment '主键id',
+            type                 varchar(50) comment '类型',
+            status               varchar(8) comment '状态',
+            order_by             varchar(8) comment '排序',
+            menu_id              varchar(50) comment '菜单ID',
+            main_id              varchar(50) comment '主表id',
+            create_time          varchar(50) not null comment '创建时间',
+            create_user          varchar(50) not null comment '创建人',
+            create_organize      varchar(50) not null comment '创建组织',
+            update_user          varchar(50) comment '修改人',
+            update_time          varchar(50) comment '修改时间',
+            primary key (id)
+        );
+    </select>
+
+    <!--修改表名-->
+    <select id="updateTableComment" parameterType="com.qingfeng.utils.PageData">
+        alter table ${table_name} comment "${table_comment}"
+    </select>
+
+    <!--删除表-->
+    <select id="dropTable" parameterType="com.qingfeng.utils.PageData">
+        drop table if exists ${table_name};
+    </select>
+
+    <!--修改表名称-->
+    <select id="updateTable" parameterType="com.qingfeng.utils.PageData">
+        alter table ${old_table_name} RENAME TO ${table_name};
+    </select>
+
+    <!--查询数据表原信息列表-->
+    <select id="findTableList" parameterType="com.qingfeng.utils.PageData" resultType="com.qingfeng.utils.PageData">
+        select
+        a.table_name as "table_name",
+        a.table_comment as "table_comment",
+        a.create_time as "create_time",
+        a.update_time as "update_time"
+        from information_schema.tables a
+        where a.table_schema=#{table_schema}
+        <if test="table_name != null and table_name != ''">
+            and a.table_name = #{table_name}
+        </if>
+        and a.table_type='BASE TABLE' and a.table_name not like 'qrtz_%' and a.table_name not like 'system_%' and a.table_name not like 'act_%' and a.table_name not like 'zipkin_%'
+    </select>
+
+    <!--查询字段表原信息列表-->
+    <select id="findColumndList" parameterType="com.qingfeng.utils.PageData" resultType="com.qingfeng.utils.PageData">
+        select
+            a.column_name as "column_name",
+            a.column_comment as "column_comment",
+            a.ordinal_position as "ordinal_position",
+            a.column_default as "column_default",
+            a.is_nullable as "is_nullable",
+            a.data_type as "data_type",
+            a.column_type as "column_type"
+            from information_schema.columns a
+            where a.table_schema=#{table_schema}
+            and a.table_name=#{table_name}
+    </select>
+
+
+</mapper>

@@ -1,0 +1,51 @@
+<span ng-if="property.value.assign_type=='0'">
+    <span ng-if="property.value.assignment.assignee">{{'PROPERTY.ASSIGNMENT.ASSIGNEE_DISPLAY' | translate:property.value.assignment }} </span>
+    <span ng-if="property.value.assignment.candidateUsers.length > 0">{{'PROPERTY.ASSIGNMENT.CANDIDATE_USERS_DISPLAY' | translate:property.value.assignment.candidateUsers}} </span>
+    <span ng-if="property.value.assignment.candidateGroups.length > 0">{{'PROPERTY.ASSIGNMENT.CANDIDATE_GROUPS_DISPLAY' | translate:property.value.assignment.candidateGroups}} </span>
+    <span ng-if="!property.value.assignment.assignee && (!property.value.assignment.candidateUsers || property.value.assignment.candidateUsers.length == 0) && (!property.value.assignment.candidateGroups || property.value.assignment.candidateGroups.length == 0)" translate>PROPERTY.ASSIGNMENT.EMPTY</span>
+</span>
+<!--{{property.value}}-->
+    <!--<span ng-if="!property.noValue">-->
+<!--{{property.assignmentType}}ddd-->
+<!--</span>-->
+<!--<span ng-if="property.noValue">-->
+    <!--动态设置-->
+<!--</span>-->
+<span ng-if="property.value.assign_type=='1'">
+<span ng-if="property.value.assign_mode=='0'">
+    所有人员中选择（根据组织选择）
+</span>
+<span ng-if="property.value.assign_mode=='1'">
+    组织选择（指定组织父节点）
+</span>
+<span ng-if="property.value.assign_mode=='2'">
+    用户组选择（选择指定组内成员）
+</span>
+<span ng-if="property.value.assign_mode=='3'">
+    发起人本组织选择
+</span>
+<span ng-if="property.value.assign_mode=='4'">
+    部门经理
+</span>
+<span ng-if="property.value.assign_mode=='5'">
+    上级领导
+</span>
+<span ng-if="property.value.assign_mode=='6'">
+    分管领导
+</span>
+<span ng-if="property.value.assign_mode=='7'">
+    流程发起人
+</span>
+<span ng-if="property.value.assign_mode=='8'">
+    指定范围选择
+</span>
+<span ng-if="property.value.assign_mode=='9'">
+    代理人（选择单用户）
+</span>
+<span ng-if="property.value.assign_mode=='10'">
+    候选人（选择多用户）
+</span>
+<span ng-if="property.value.assign_mode=='11'">
+    候选组（选择多组织）
+</span>
+</span>

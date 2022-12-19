@@ -1,0 +1,225 @@
+2022-12-17 13:13:01.030 [http-nio-8080-exec-4] INFO  o.j.c.desensitization.aspect.SensitiveDataAspect:76 - 加密操作，Aspect程序耗时：1ms
+2022-12-17 13:13:01.159 [http-nio-8080-exec-5] INFO  o.jeecg.modules.system.controller.LoginController:193 -  用户名:  管理员,退出成功！ 
+2022-12-17 13:13:01.281 [http-nio-8080-exec-6] INFO  o.jeecg.modules.system.controller.LoginController:516 - 获取验证码，Redis key = 1ba8b0f81205057d79c02e68f3e90013，checkCode = RiHe
+2022-12-17 13:13:04.116 [http-nio-8080-exec-7] INFO  o.jeecg.modules.system.controller.LoginController:516 - 获取验证码，Redis key = 06794261cb0e7cd8a254780798715735，checkCode = mrKE
+2022-12-17 13:13:10.828 [http-nio-8080-exec-4] INFO  o.j.c.modules.redis.writer.JeecgRedisCacheWriter:113 - redis remove key:sys:cache:encrypt:user::admin
+2022-12-17 13:13:10.967 [http-nio-8080-exec-10] INFO  o.j.c.desensitization.aspect.SensitiveDataAspect:76 - 加密操作，Aspect程序耗时：1ms
+2022-12-17 13:13:11.519 [http-nio-8080-exec-3] INFO  org.jeecg.modules.message.websocket.WebSocket:43 - 【系统 WebSocket】有新的连接，总数为:1
+2022-12-17 13:13:11.663 [http-nio-8080-exec-6] INFO  o.j.m.system.controller.SysPermissionController:140 - ======获取一级菜单数据=====耗时:11毫秒
+2022-12-17 13:13:18.460 [http-nio-8080-exec-3] INFO  org.jeecg.common.aspect.PermissionDataAspect:71 - 拦截请求 >> /sys/user/list ; 请求类型 >> GET . 
+2022-12-17 13:13:18.530 [http-nio-8080-exec-3] INFO  org.jeecg.common.system.query.QueryGenerator:241 - 排序规则>>列:createTime,排序方式:desc
+2022-12-17 13:13:18.562 [http-nio-8080-exec-3] INFO  o.j.modules.system.controller.SysUserController:158 - com.baomidou.mybatisplus.extension.plugins.pagination.Page@d842021
+2022-12-17 13:13:19.538 [http-nio-8080-exec-6] INFO  org.jeecg.common.system.query.QueryGenerator:241 - 排序规则>>列:createTime,排序方式:desc
+2022-12-17 13:14:01.345 [http-nio-8080-exec-7] INFO  org.jeecg.common.aspect.PermissionDataAspect:71 - 拦截请求 >> /online/cgform/head/list ; 请求类型 >> GET . 
+2022-12-17 13:14:01.363 [http-nio-8080-exec-7] INFO  org.jeecg.common.system.query.QueryGenerator:648 - ---查询过滤器，Query规则---field:copy_type, rule:=, value:0
+2022-12-17 13:14:01.366 [http-nio-8080-exec-7] INFO  org.jeecg.common.system.query.QueryGenerator:241 - 排序规则>>列:createTime,排序方式:desc
+2022-12-17 13:14:19.504 [http-nio-8080-exec-8] INFO  org.jeecg.common.aspect.PermissionDataAspect:71 - 拦截请求 >> /online/cgform/head/list ; 请求类型 >> GET . 
+2022-12-17 13:14:19.514 [http-nio-8080-exec-8] INFO  org.jeecg.common.system.query.QueryGenerator:648 - ---查询过滤器，Query规则---field:copy_type, rule:=, value:0
+2022-12-17 13:14:19.516 [http-nio-8080-exec-8] INFO  org.jeecg.common.system.query.QueryGenerator:241 - 排序规则>>列:createTime,排序方式:desc
+2022-12-17 13:14:29.396 [http-nio-8080-exec-2] INFO  org.jeecg.common.aspect.PermissionDataAspect:71 - 拦截请求 >> /online/cgform/head/list ; 请求类型 >> GET . 
+2022-12-17 13:14:29.403 [http-nio-8080-exec-2] INFO  org.jeecg.common.system.query.QueryGenerator:648 - ---查询过滤器，Query规则---field:copy_type, rule:=, value:1
+2022-12-17 13:14:29.407 [http-nio-8080-exec-2] INFO  org.jeecg.common.system.query.QueryGenerator:648 - ---查询过滤器，Query规则---field:physic_id, rule:=, value:250b367a342a451e9d9baeaebf8394e2
+2022-12-17 13:14:29.408 [http-nio-8080-exec-2] INFO  org.jeecg.common.system.query.QueryGenerator:241 - 排序规则>>列:createTime,排序方式:desc
+2022-12-17 13:14:38.070 [http-nio-8080-exec-4] INFO  org.jeecg.common.aspect.PermissionDataAspect:71 - 拦截请求 >> /online/cgform/api/getData/8a808882851e812901851e81292f0000 ; 请求类型 >> GET . 
+2022-12-17 13:14:47.231 [http-nio-8080-exec-8] INFO  org.jeecg.common.aspect.PermissionDataAspect:71 - 拦截请求 >> /online/cgform/head/list ; 请求类型 >> GET . 
+2022-12-17 13:14:47.237 [http-nio-8080-exec-8] INFO  org.jeecg.common.system.query.QueryGenerator:648 - ---查询过滤器，Query规则---field:copy_type, rule:=, value:1
+2022-12-17 13:14:47.238 [http-nio-8080-exec-8] INFO  org.jeecg.common.system.query.QueryGenerator:648 - ---查询过滤器，Query规则---field:physic_id, rule:=, value:250b367a342a451e9d9baeaebf8394e2
+2022-12-17 13:14:47.238 [http-nio-8080-exec-8] INFO  org.jeecg.common.system.query.QueryGenerator:241 - 排序规则>>列:createTime,排序方式:desc
+2022-12-17 13:14:48.055 [http-nio-8080-exec-7] INFO  org.jeecg.common.aspect.PermissionDataAspect:71 - 拦截请求 >> /online/cgform/head/list ; 请求类型 >> GET . 
+2022-12-17 13:14:48.061 [http-nio-8080-exec-7] INFO  org.jeecg.common.system.query.QueryGenerator:648 - ---查询过滤器，Query规则---field:copy_type, rule:=, value:0
+2022-12-17 13:14:48.061 [http-nio-8080-exec-7] INFO  org.jeecg.common.system.query.QueryGenerator:241 - 排序规则>>列:createTime,排序方式:desc
+2022-12-17 13:16:03.162 [http-nio-8080-exec-3] INFO  org.jeecg.common.aspect.PermissionDataAspect:71 - 拦截请求 >> /online/cgform/head/list ; 请求类型 >> GET . 
+2022-12-17 13:16:03.167 [http-nio-8080-exec-3] INFO  org.jeecg.common.system.query.QueryGenerator:648 - ---查询过滤器，Query规则---field:copy_type, rule:=, value:0
+2022-12-17 13:16:03.168 [http-nio-8080-exec-3] INFO  org.jeecg.common.system.query.QueryGenerator:241 - 排序规则>>列:createTime,排序方式:desc
+2022-12-17 13:16:04.762 [http-nio-8080-exec-9] INFO  org.jeecg.common.system.query.QueryGenerator:241 - 排序规则>>列:null,排序方式:null
+2022-12-17 13:16:04.769 [http-nio-8080-exec-8] INFO  org.jeecg.common.system.query.QueryGenerator:241 - 排序规则>>列:createTime,排序方式:desc
+2022-12-17 13:16:12.086 [http-nio-8080-exec-3] INFO  org.jeecg.common.aspect.PermissionDataAspect:71 - 拦截请求 >> /online/cgreport/api/getColumnsAndData/1260179852088135681 ; 请求类型 >> GET . 
+2022-12-17 13:16:12.107 [http-nio-8080-exec-3] INFO  o.j.c.util.security.AbstractQueryBlackListHandler:55 - --获取sql信息--
+2022-12-17 13:16:26.442 [http-nio-8080-exec-9] INFO  org.jeecg.common.system.query.QueryGenerator:241 - 排序规则>>列:null,排序方式:null
+2022-12-17 13:16:26.442 [http-nio-8080-exec-8] INFO  org.jeecg.common.system.query.QueryGenerator:241 - 排序规则>>列:createTime,排序方式:desc
+2022-12-17 13:16:41.322 [http-nio-8080-exec-7] INFO  o.j.m.system.controller.DuplicateCheckController:50 - ----duplicate check------：DuplicateCheckVo(tableName=onl_cgreport_head, fieldName=code, fieldVal=x, dataId=null)
+2022-12-17 13:16:41.559 [http-nio-8080-exec-4] INFO  o.j.m.system.controller.DuplicateCheckController:50 - ----duplicate check------：DuplicateCheckVo(tableName=onl_cgreport_head, fieldName=code, fieldVal=xx, dataId=null)
+2022-12-17 13:16:41.833 [http-nio-8080-exec-3] INFO  o.j.m.system.controller.DuplicateCheckController:50 - ----duplicate check------：DuplicateCheckVo(tableName=onl_cgreport_head, fieldName=code, fieldVal=xxx, dataId=null)
+2022-12-17 13:16:42.039 [http-nio-8080-exec-2] INFO  o.j.m.system.controller.DuplicateCheckController:50 - ----duplicate check------：DuplicateCheckVo(tableName=onl_cgreport_head, fieldName=code, fieldVal=xxxx, dataId=null)
+2022-12-17 13:23:42.535 [http-nio-8080-exec-7] INFO  org.jeecg.common.aspect.PermissionDataAspect:71 - 拦截请求 >> /online/cgform/head/list ; 请求类型 >> GET . 
+2022-12-17 13:23:42.543 [http-nio-8080-exec-7] INFO  org.jeecg.common.system.query.QueryGenerator:648 - ---查询过滤器，Query规则---field:copy_type, rule:=, value:0
+2022-12-17 13:23:42.544 [http-nio-8080-exec-7] INFO  org.jeecg.common.system.query.QueryGenerator:241 - 排序规则>>列:createTime,排序方式:desc
+2022-12-17 13:25:10.568 [http-nio-8080-exec-6] INFO  org.jeecg.common.aspect.PermissionDataAspect:71 - 拦截请求 >> /online/cgreport/api/getColumnsAndData/6c7f59741c814347905a938f06ee003c ; 请求类型 >> GET . 
+2022-12-17 13:25:10.581 [http-nio-8080-exec-6] INFO  o.j.c.util.security.AbstractQueryBlackListHandler:55 - --获取sql信息--
+2022-12-17 13:25:22.985 [http-nio-8080-exec-4] INFO  org.jeecg.common.system.query.QueryGenerator:241 - 排序规则>>列:createTime,排序方式:desc
+2022-12-17 13:25:22.986 [http-nio-8080-exec-5] INFO  org.jeecg.common.system.query.QueryGenerator:241 - 排序规则>>列:null,排序方式:null
+2022-12-17 13:29:00.734 [http-nio-8080-exec-9] INFO  org.jeecg.common.aspect.PermissionDataAspect:71 - 拦截请求 >> /online/cgform/head/list ; 请求类型 >> GET . 
+2022-12-17 13:29:00.741 [http-nio-8080-exec-9] INFO  org.jeecg.common.system.query.QueryGenerator:648 - ---查询过滤器，Query规则---field:copy_type, rule:=, value:0
+2022-12-17 13:29:00.742 [http-nio-8080-exec-9] INFO  org.jeecg.common.system.query.QueryGenerator:241 - 排序规则>>列:createTime,排序方式:desc
+2022-12-17 13:29:10.360 [http-nio-8080-exec-7] INFO  org.jeecg.common.system.query.QueryGenerator:241 - 排序规则>>列:createTime,排序方式:desc
+2022-12-17 13:29:10.360 [http-nio-8080-exec-1] INFO  org.jeecg.common.system.query.QueryGenerator:241 - 排序规则>>列:null,排序方式:null
+2022-12-17 13:29:16.461 [http-nio-8080-exec-4] INFO  org.jeecg.common.system.query.QueryGenerator:241 - 排序规则>>列:createTime,排序方式:desc
+2022-12-17 13:29:19.179 [http-nio-8080-exec-10] INFO  org.jeecg.common.aspect.PermissionDataAspect:71 - 拦截请求 >> /online/cgform/head/list ; 请求类型 >> GET . 
+2022-12-17 13:29:19.184 [http-nio-8080-exec-10] INFO  org.jeecg.common.system.query.QueryGenerator:648 - ---查询过滤器，Query规则---field:copy_type, rule:=, value:0
+2022-12-17 13:29:19.185 [http-nio-8080-exec-10] INFO  org.jeecg.common.system.query.QueryGenerator:241 - 排序规则>>列:createTime,排序方式:desc
+2022-12-17 13:29:44.122 [http-nio-8080-exec-8] INFO  org.jeecg.common.system.query.QueryGenerator:241 - 排序规则>>列:createTime,排序方式:desc
+2022-12-17 13:29:44.123 [http-nio-8080-exec-6] INFO  org.jeecg.common.system.query.QueryGenerator:241 - 排序规则>>列:null,排序方式:null
+2022-12-17 13:29:55.368 [http-nio-8080-exec-7] INFO  org.jeecg.modules.jmreport.desreport.a.a:620 -  JmReport Base Config JSON : org.jeecg.modules.jmreport.config.JmReportBaseConfig$$EnhancerBySpringCGLIB$$5ad484bc@18074ab3
+2022-12-17 13:29:55.368 [http-nio-8080-exec-1] INFO  org.jeecg.modules.jmreport.desreport.a.a:620 -  JmReport Base Config JSON : org.jeecg.modules.jmreport.config.JmReportBaseConfig$$EnhancerBySpringCGLIB$$5ad484bc@18074ab3
+2022-12-17 13:29:55.368 [http-nio-8080-exec-1] INFO  org.jeecg.modules.jmreport.desreport.a.a:621 - freemarker base: /jeecg-boot
+2022-12-17 13:29:55.368 [http-nio-8080-exec-7] INFO  org.jeecg.modules.jmreport.desreport.a.a:621 - freemarker base: /jeecg-boot
+2022-12-17 13:29:55.369 [http-nio-8080-exec-1] INFO  org.jeecg.modules.jmreport.desreport.a.a:622 - freemarker customPrePath: 
+2022-12-17 13:29:55.369 [http-nio-8080-exec-7] INFO  org.jeecg.modules.jmreport.desreport.a.a:622 - freemarker customPrePath: 
+2022-12-17 13:29:55.865 [http-nio-8080-exec-4] INFO  org.jeecg.common.system.query.QueryGenerator:241 - 排序规则>>列:createTime,排序方式:desc
+2022-12-17 13:29:57.606 [http-nio-8080-exec-10] INFO  org.jeecgframework.minidao.aop.MiniDaoHandler:424 - page countsql===> SELECT count(0) FROM jimu_report jr WHERE 1 = 1 AND jr.TYPE = :jimuReport.type AND jr.DEL_FLAG = :jimuReport.delFlag AND jr.TEMPLATE = :jimuReport.template
+2022-12-17 13:29:57.627 [http-nio-8080-exec-10] INFO  org.jeecgframework.minidao.aop.MiniDaoHandler:435 - page executeSql===> SELECT jr.ID,jr.NAME,jr.CODE,jr.TYPE,jr.template,jr.thumb FROM jimu_report jr WHERE 1=1 and jr.TYPE = :jimuReport.type and jr.DEL_FLAG = :jimuReport.delFlag and jr.TEMPLATE = :jimuReport.template ORDER BY jr.create_time DESC
+ LIMIT 10 
+2022-12-17 13:30:00.094 [http-nio-8080-exec-8] INFO  org.jeecg.modules.jmreport.desreport.a.a:245 - 进入设计器页面，saas: false ,登录Token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NzEyNTc1OTAsInVzZXJuYW1lIjoiYWRtaW4ifQ.GzJop7VAfj8U2vy2kN47VmpUb1XXivl-tevqk23z3WE
+2022-12-17 13:30:00.102 [http-nio-8080-exec-8] INFO  org.jeecg.modules.jmreport.desreport.a.a:620 -  JmReport Base Config JSON : org.jeecg.modules.jmreport.config.JmReportBaseConfig$$EnhancerBySpringCGLIB$$5ad484bc@18074ab3
+2022-12-17 13:30:00.103 [http-nio-8080-exec-8] INFO  org.jeecg.modules.jmreport.desreport.a.a:621 - freemarker base: /jeecg-boot
+2022-12-17 13:30:00.103 [http-nio-8080-exec-8] INFO  org.jeecg.modules.jmreport.desreport.a.a:622 - freemarker customPrePath: 
+2022-12-17 13:30:00.962 [http-nio-8080-exec-9] INFO  org.jeecgframework.minidao.aop.MiniDaoHandler:424 - page countsql===> SELECT count(0) FROM jimu_dict sd WHERE 1 = 1 AND sd.DEL_FLAG = :reportDict.delFlag
+2022-12-17 13:30:00.963 [http-nio-8080-exec-2] INFO  org.jeecgframework.minidao.aop.MiniDaoHandler:424 - page countsql===> SELECT count(0) FROM jimu_report_data_source jrds WHERE 1 = 1
+2022-12-17 13:30:00.965 [http-nio-8080-exec-2] INFO  org.jeecgframework.minidao.aop.MiniDaoHandler:435 - page executeSql===> SELECT * FROM jimu_report_data_source jrds where 1=1
+ LIMIT 10 
+2022-12-17 13:30:00.966 [http-nio-8080-exec-9] INFO  org.jeecgframework.minidao.aop.MiniDaoHandler:435 - page executeSql===> SELECT * FROM jimu_dict sd where 1=1 and sd.DEL_FLAG = :reportDict.delFlag order by create_time desc
+ LIMIT 10 
+2022-12-17 13:30:04.193 [http-nio-8080-exec-10] INFO  org.jeecgframework.minidao.aop.MiniDaoHandler:424 - page countsql===> SELECT count(0) FROM jimu_report jr WHERE 1 = 1 AND jr.TYPE = :jimuReport.type AND jr.DEL_FLAG = :jimuReport.delFlag AND jr.TEMPLATE = :jimuReport.template
+2022-12-17 13:30:04.195 [http-nio-8080-exec-10] INFO  org.jeecgframework.minidao.aop.MiniDaoHandler:435 - page executeSql===> SELECT jr.ID,jr.NAME,jr.CODE,jr.TYPE,jr.template,jr.thumb FROM jimu_report jr WHERE 1=1 and jr.TYPE = :jimuReport.type and jr.DEL_FLAG = :jimuReport.delFlag and jr.TEMPLATE = :jimuReport.template ORDER BY jr.create_time DESC
+ LIMIT 10 
+2022-12-17 13:30:05.828 [http-nio-8080-exec-2] INFO  org.jeecgframework.minidao.aop.MiniDaoHandler:424 - page countsql===> SELECT count(0) FROM jimu_report jr WHERE 1 = 1 AND jr.TYPE = :jimuReport.type AND jr.DEL_FLAG = :jimuReport.delFlag AND jr.TEMPLATE = :jimuReport.template
+2022-12-17 13:30:05.830 [http-nio-8080-exec-2] INFO  org.jeecgframework.minidao.aop.MiniDaoHandler:435 - page executeSql===> SELECT jr.ID,jr.NAME,jr.CODE,jr.TYPE,jr.template,jr.thumb FROM jimu_report jr WHERE 1=1 and jr.TYPE = :jimuReport.type and jr.DEL_FLAG = :jimuReport.delFlag and jr.TEMPLATE = :jimuReport.template ORDER BY jr.create_time DESC
+ LIMIT 10 
+2022-12-17 13:30:07.325 [http-nio-8080-exec-4] INFO  org.jeecgframework.minidao.aop.MiniDaoHandler:424 - page countsql===> SELECT count(0) FROM jimu_report jr WHERE 1 = 1 AND jr.TYPE = :jimuReport.type AND jr.DEL_FLAG = :jimuReport.delFlag AND jr.TEMPLATE = :jimuReport.template
+2022-12-17 13:30:07.326 [http-nio-8080-exec-4] INFO  org.jeecgframework.minidao.aop.MiniDaoHandler:435 - page executeSql===> SELECT jr.ID,jr.NAME,jr.CODE,jr.TYPE,jr.template,jr.thumb FROM jimu_report jr WHERE 1=1 and jr.TYPE = :jimuReport.type and jr.DEL_FLAG = :jimuReport.delFlag and jr.TEMPLATE = :jimuReport.template ORDER BY jr.create_time DESC
+ LIMIT 10 
+2022-12-17 13:30:09.373 [http-nio-8080-exec-9] INFO  org.jeecgframework.minidao.aop.MiniDaoHandler:424 - page countsql===> SELECT count(0) FROM jimu_report jr WHERE 1 = 1 AND jr.TYPE = :jimuReport.type AND jr.DEL_FLAG = :jimuReport.delFlag AND jr.TEMPLATE = :jimuReport.template
+2022-12-17 13:30:09.376 [http-nio-8080-exec-9] INFO  org.jeecgframework.minidao.aop.MiniDaoHandler:435 - page executeSql===> SELECT jr.ID,jr.NAME,jr.CODE,jr.TYPE,jr.template,jr.thumb FROM jimu_report jr WHERE 1=1 and jr.TYPE = :jimuReport.type and jr.DEL_FLAG = :jimuReport.delFlag and jr.TEMPLATE = :jimuReport.template ORDER BY jr.create_time DESC
+ LIMIT 10 
+2022-12-17 13:30:10.245 [http-nio-8080-exec-3] INFO  org.jeecgframework.minidao.aop.MiniDaoHandler:424 - page countsql===> SELECT count(0) FROM jimu_report jr WHERE 1 = 1 AND jr.TYPE = :jimuReport.type AND jr.DEL_FLAG = :jimuReport.delFlag AND jr.TEMPLATE = :jimuReport.template
+2022-12-17 13:30:10.247 [http-nio-8080-exec-3] INFO  org.jeecgframework.minidao.aop.MiniDaoHandler:435 - page executeSql===> SELECT jr.ID,jr.NAME,jr.CODE,jr.TYPE,jr.template,jr.thumb FROM jimu_report jr WHERE 1=1 and jr.TYPE = :jimuReport.type and jr.DEL_FLAG = :jimuReport.delFlag and jr.TEMPLATE = :jimuReport.template ORDER BY jr.create_time DESC
+ LIMIT 10 
+2022-12-17 13:30:11.319 [http-nio-8080-exec-8] INFO  org.jeecg.modules.jmreport.desreport.a.a:245 - 进入设计器页面，saas: false ,登录Token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NzEyNTc1OTAsInVzZXJuYW1lIjoiYWRtaW4ifQ.GzJop7VAfj8U2vy2kN47VmpUb1XXivl-tevqk23z3WE
+2022-12-17 13:30:11.322 [http-nio-8080-exec-8] INFO  org.jeecg.modules.jmreport.desreport.a.a:620 -  JmReport Base Config JSON : org.jeecg.modules.jmreport.config.JmReportBaseConfig$$EnhancerBySpringCGLIB$$5ad484bc@18074ab3
+2022-12-17 13:30:11.323 [http-nio-8080-exec-8] INFO  org.jeecg.modules.jmreport.desreport.a.a:621 - freemarker base: /jeecg-boot
+2022-12-17 13:30:11.323 [http-nio-8080-exec-8] INFO  org.jeecg.modules.jmreport.desreport.a.a:622 - freemarker customPrePath: 
+2022-12-17 13:30:12.005 [http-nio-8080-exec-1] INFO  org.jeecgframework.minidao.aop.MiniDaoHandler:424 - page countsql===> SELECT count(0) FROM jimu_report_data_source jrds WHERE 1 = 1
+2022-12-17 13:30:12.005 [http-nio-8080-exec-6] INFO  org.jeecgframework.minidao.aop.MiniDaoHandler:424 - page countsql===> SELECT count(0) FROM jimu_dict sd WHERE 1 = 1 AND sd.DEL_FLAG = :reportDict.delFlag
+2022-12-17 13:30:12.007 [http-nio-8080-exec-6] INFO  org.jeecgframework.minidao.aop.MiniDaoHandler:435 - page executeSql===> SELECT * FROM jimu_dict sd where 1=1 and sd.DEL_FLAG = :reportDict.delFlag order by create_time desc
+ LIMIT 10 
+2022-12-17 13:30:12.007 [http-nio-8080-exec-1] INFO  org.jeecgframework.minidao.aop.MiniDaoHandler:435 - page executeSql===> SELECT * FROM jimu_report_data_source jrds where 1=1
+ LIMIT 10 
+2022-12-17 13:30:16.192 [http-nio-8080-exec-3] INFO  org.jeecg.modules.jmreport.desreport.a.a:245 - 进入设计器页面，saas: false ,登录Token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NzEyNTc1OTAsInVzZXJuYW1lIjoiYWRtaW4ifQ.GzJop7VAfj8U2vy2kN47VmpUb1XXivl-tevqk23z3WE
+2022-12-17 13:30:16.195 [http-nio-8080-exec-3] INFO  org.jeecg.modules.jmreport.desreport.a.a:620 -  JmReport Base Config JSON : org.jeecg.modules.jmreport.config.JmReportBaseConfig$$EnhancerBySpringCGLIB$$5ad484bc@18074ab3
+2022-12-17 13:30:16.196 [http-nio-8080-exec-3] INFO  org.jeecg.modules.jmreport.desreport.a.a:621 - freemarker base: /jeecg-boot
+2022-12-17 13:30:16.196 [http-nio-8080-exec-3] INFO  org.jeecg.modules.jmreport.desreport.a.a:622 - freemarker customPrePath: 
+2022-12-17 13:30:16.776 [http-nio-8080-exec-5] INFO  org.jeecgframework.minidao.aop.MiniDaoHandler:424 - page countsql===> SELECT count(0) FROM jimu_dict sd WHERE 1 = 1 AND sd.DEL_FLAG = :reportDict.delFlag
+2022-12-17 13:30:16.778 [http-nio-8080-exec-5] INFO  org.jeecgframework.minidao.aop.MiniDaoHandler:435 - page executeSql===> SELECT * FROM jimu_dict sd where 1=1 and sd.DEL_FLAG = :reportDict.delFlag order by create_time desc
+ LIMIT 10 
+2022-12-17 13:30:16.778 [http-nio-8080-exec-1] INFO  org.jeecgframework.minidao.aop.MiniDaoHandler:424 - page countsql===> SELECT count(0) FROM jimu_report_data_source jrds WHERE 1 = 1
+2022-12-17 13:30:16.785 [http-nio-8080-exec-1] INFO  org.jeecgframework.minidao.aop.MiniDaoHandler:435 - page executeSql===> SELECT * FROM jimu_report_data_source jrds where 1=1
+ LIMIT 10 
+2022-12-17 13:33:38.996 [http-nio-8080-exec-6] INFO  org.jeecg.common.system.query.QueryGenerator:241 - 排序规则>>列:createTime,排序方式:desc
+2022-12-17 13:33:40.447 [http-nio-8080-exec-4] INFO  org.jeecg.common.aspect.PermissionDataAspect:71 - 拦截请求 >> /online/cgreport/api/getColumnsAndData/6c7f59741c814347905a938f06ee003c ; 请求类型 >> GET . 
+2022-12-17 13:33:40.461 [http-nio-8080-exec-4] INFO  o.j.c.util.security.AbstractQueryBlackListHandler:55 - --获取sql信息--
+2022-12-17 13:33:45.636 [http-nio-8080-exec-5] INFO  org.jeecg.common.aspect.PermissionDataAspect:71 - 拦截请求 >> /online/cgreport/api/getColumnsAndData/1260179852088135681 ; 请求类型 >> GET . 
+2022-12-17 13:33:45.649 [http-nio-8080-exec-5] INFO  o.j.c.util.security.AbstractQueryBlackListHandler:55 - --获取sql信息--
+2022-12-17 13:33:47.997 [http-nio-8080-exec-9] INFO  org.jeecg.common.system.query.QueryGenerator:241 - 排序规则>>列:null,排序方式:null
+2022-12-17 13:33:48.003 [http-nio-8080-exec-7] INFO  org.jeecg.common.system.query.QueryGenerator:241 - 排序规则>>列:createTime,排序方式:desc
+2022-12-17 13:33:51.537 [http-nio-8080-exec-3] INFO  org.jeecg.common.aspect.PermissionDataAspect:71 - 拦截请求 >> /online/cgform/head/list ; 请求类型 >> GET . 
+2022-12-17 13:33:51.543 [http-nio-8080-exec-3] INFO  org.jeecg.common.system.query.QueryGenerator:648 - ---查询过滤器，Query规则---field:copy_type, rule:=, value:0
+2022-12-17 13:33:51.544 [http-nio-8080-exec-3] INFO  org.jeecg.common.system.query.QueryGenerator:241 - 排序规则>>列:createTime,排序方式:desc
+2022-12-17 13:34:55.489 [http-nio-8080-exec-1] INFO  org.jeecg.common.aspect.PermissionDataAspect:71 - 拦截请求 >> /online/cgreport/api/getColumnsAndData/6c7f59741c814347905a938f06ee003c ; 请求类型 >> GET . 
+2022-12-17 13:34:55.508 [http-nio-8080-exec-1] INFO  o.j.c.util.security.AbstractQueryBlackListHandler:55 - --获取sql信息--
+2022-12-17 13:34:56.537 [http-nio-8080-exec-2] INFO  org.jeecg.modules.jmreport.desreport.a.a:620 -  JmReport Base Config JSON : org.jeecg.modules.jmreport.config.JmReportBaseConfig$$EnhancerBySpringCGLIB$$5ad484bc@18074ab3
+2022-12-17 13:34:56.537 [http-nio-8080-exec-5] INFO  org.jeecg.modules.jmreport.desreport.a.a:620 -  JmReport Base Config JSON : org.jeecg.modules.jmreport.config.JmReportBaseConfig$$EnhancerBySpringCGLIB$$5ad484bc@18074ab3
+2022-12-17 13:34:56.538 [http-nio-8080-exec-2] INFO  org.jeecg.modules.jmreport.desreport.a.a:621 - freemarker base: /jeecg-boot
+2022-12-17 13:34:56.538 [http-nio-8080-exec-2] INFO  org.jeecg.modules.jmreport.desreport.a.a:622 - freemarker customPrePath: 
+2022-12-17 13:34:56.538 [http-nio-8080-exec-5] INFO  org.jeecg.modules.jmreport.desreport.a.a:621 - freemarker base: /jeecg-boot
+2022-12-17 13:34:56.538 [http-nio-8080-exec-5] INFO  org.jeecg.modules.jmreport.desreport.a.a:622 - freemarker customPrePath: 
+2022-12-17 13:34:57.150 [http-nio-8080-exec-8] INFO  org.jeecg.common.aspect.PermissionDataAspect:71 - 拦截请求 >> /online/cgreport/api/getColumnsAndData/6c7f59741c814347905a938f06ee003c ; 请求类型 >> GET . 
+2022-12-17 13:34:57.167 [http-nio-8080-exec-8] INFO  o.j.c.util.security.AbstractQueryBlackListHandler:55 - --获取sql信息--
+2022-12-17 13:34:58.155 [http-nio-8080-exec-9] INFO  org.jeecg.modules.jmreport.desreport.a.a:379 - --------进入show方法-----------, id = 1352160857479581696
+2022-12-17 13:34:58.208 [http-nio-8080-exec-9] INFO  org.jeecg.modules.jmreport.desreport.service.a.e:3044 -   原始 apiUrl=http://localhost:8080/jeecg-boot/sys/actuator/redis/infoForReport , token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NzEyNTc1OTAsInVzZXJuYW1lIjoiYWRtaW4ifQ.GzJop7VAfj8U2vy2kN47VmpUb1XXivl-tevqk23z3WE
+2022-12-17 13:34:58.209 [http-nio-8080-exec-9] INFO  org.jeecg.modules.jmreport.desreport.service.a.e:3048 -   替换${} apiUrl=http://localhost:8080/jeecg-boot/sys/actuator/redis/infoForReport
+2022-12-17 13:34:58.675 [http-nio-8080-exec-9] INFO  org.jeecg.modules.jmreport.desreport.service.a.e:3044 -   原始 apiUrl=http://localhost:8080/jeecg-boot/sys/actuator/redis/memoryForReport , token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NzEyNTc1OTAsInVzZXJuYW1lIjoiYWRtaW4ifQ.GzJop7VAfj8U2vy2kN47VmpUb1XXivl-tevqk23z3WE
+2022-12-17 13:34:58.675 [http-nio-8080-exec-9] INFO  org.jeecg.modules.jmreport.desreport.service.a.e:3048 -   替换${} apiUrl=http://localhost:8080/jeecg-boot/sys/actuator/redis/memoryForReport
+2022-12-17 13:34:58.964 [http-nio-8080-exec-9] INFO  org.jeecg.modules.jmreport.desreport.service.a.e:3044 -   原始 apiUrl=http://localhost:8080/jeecg-boot/sys/actuator/redis/keysSizeForReport , token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NzEyNTc1OTAsInVzZXJuYW1lIjoiYWRtaW4ifQ.GzJop7VAfj8U2vy2kN47VmpUb1XXivl-tevqk23z3WE
+2022-12-17 13:34:58.964 [http-nio-8080-exec-9] INFO  org.jeecg.modules.jmreport.desreport.service.a.e:3048 -   替换${} apiUrl=http://localhost:8080/jeecg-boot/sys/actuator/redis/keysSizeForReport
+2022-12-17 13:34:59.322 [http-nio-8080-exec-9] WARN  o.j.modules.jmreport.desreport.express.ExpressUtil:244 - 类没定义！
+2022-12-17 13:45:38.243 [http-nio-8080-exec-7] INFO  org.jeecg.modules.jmreport.desreport.a.a:620 -  JmReport Base Config JSON : org.jeecg.modules.jmreport.config.JmReportBaseConfig$$EnhancerBySpringCGLIB$$5ad484bc@18074ab3
+2022-12-17 13:45:38.243 [http-nio-8080-exec-6] INFO  org.jeecg.modules.jmreport.desreport.a.a:620 -  JmReport Base Config JSON : org.jeecg.modules.jmreport.config.JmReportBaseConfig$$EnhancerBySpringCGLIB$$5ad484bc@18074ab3
+2022-12-17 13:45:38.244 [http-nio-8080-exec-7] INFO  org.jeecg.modules.jmreport.desreport.a.a:621 - freemarker base: /jeecg-boot
+2022-12-17 13:45:38.244 [http-nio-8080-exec-6] INFO  org.jeecg.modules.jmreport.desreport.a.a:621 - freemarker base: /jeecg-boot
+2022-12-17 13:45:38.244 [http-nio-8080-exec-7] INFO  org.jeecg.modules.jmreport.desreport.a.a:622 - freemarker customPrePath: 
+2022-12-17 13:45:38.244 [http-nio-8080-exec-6] INFO  org.jeecg.modules.jmreport.desreport.a.a:622 - freemarker customPrePath: 
+2022-12-17 13:45:38.840 [http-nio-8080-exec-8] INFO  org.jeecg.common.aspect.PermissionDataAspect:71 - 拦截请求 >> /online/cgreport/api/getColumnsAndData/6c7f59741c814347905a938f06ee003c ; 请求类型 >> GET . 
+2022-12-17 13:45:38.852 [http-nio-8080-exec-8] INFO  o.j.c.util.security.AbstractQueryBlackListHandler:55 - --获取sql信息--
+2022-12-17 13:45:39.838 [http-nio-8080-exec-3] INFO  org.jeecg.modules.jmreport.desreport.a.a:379 - --------进入show方法-----------, id = 1352160857479581696
+2022-12-17 13:45:39.889 [http-nio-8080-exec-3] INFO  org.jeecg.modules.jmreport.desreport.service.a.e:3044 -   原始 apiUrl=http://localhost:8080/jeecg-boot/sys/actuator/redis/infoForReport , token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NzEyNTc1OTAsInVzZXJuYW1lIjoiYWRtaW4ifQ.GzJop7VAfj8U2vy2kN47VmpUb1XXivl-tevqk23z3WE
+2022-12-17 13:45:39.890 [http-nio-8080-exec-3] INFO  org.jeecg.modules.jmreport.desreport.service.a.e:3048 -   替换${} apiUrl=http://localhost:8080/jeecg-boot/sys/actuator/redis/infoForReport
+2022-12-17 13:45:40.000 [http-nio-8080-exec-3] INFO  org.jeecg.modules.jmreport.desreport.service.a.e:3044 -   原始 apiUrl=http://localhost:8080/jeecg-boot/sys/actuator/redis/memoryForReport , token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NzEyNTc1OTAsInVzZXJuYW1lIjoiYWRtaW4ifQ.GzJop7VAfj8U2vy2kN47VmpUb1XXivl-tevqk23z3WE
+2022-12-17 13:45:40.000 [http-nio-8080-exec-3] INFO  org.jeecg.modules.jmreport.desreport.service.a.e:3048 -   替换${} apiUrl=http://localhost:8080/jeecg-boot/sys/actuator/redis/memoryForReport
+2022-12-17 13:45:40.181 [http-nio-8080-exec-3] INFO  org.jeecg.modules.jmreport.desreport.service.a.e:3044 -   原始 apiUrl=http://localhost:8080/jeecg-boot/sys/actuator/redis/keysSizeForReport , token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NzEyNTc1OTAsInVzZXJuYW1lIjoiYWRtaW4ifQ.GzJop7VAfj8U2vy2kN47VmpUb1XXivl-tevqk23z3WE
+2022-12-17 13:45:40.182 [http-nio-8080-exec-3] INFO  org.jeecg.modules.jmreport.desreport.service.a.e:3048 -   替换${} apiUrl=http://localhost:8080/jeecg-boot/sys/actuator/redis/keysSizeForReport
+2022-12-17 13:45:45.478 [http-nio-8080-exec-6] INFO  org.jeecg.modules.jmreport.desreport.service.a.e:3044 -   原始 apiUrl=http://localhost:8080/jeecg-boot/sys/actuator/redis/memoryForReport?printAll=true , token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NzEyNTc1OTAsInVzZXJuYW1lIjoiYWRtaW4ifQ.GzJop7VAfj8U2vy2kN47VmpUb1XXivl-tevqk23z3WE
+2022-12-17 13:45:45.478 [http-nio-8080-exec-10] INFO  org.jeecg.modules.jmreport.desreport.service.a.e:3044 -   原始 apiUrl=http://localhost:8080/jeecg-boot/sys/actuator/redis/keysSizeForReport?printAll=true , token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NzEyNTc1OTAsInVzZXJuYW1lIjoiYWRtaW4ifQ.GzJop7VAfj8U2vy2kN47VmpUb1XXivl-tevqk23z3WE
+2022-12-17 13:45:45.479 [http-nio-8080-exec-10] INFO  org.jeecg.modules.jmreport.desreport.service.a.e:3048 -   替换${} apiUrl=http://localhost:8080/jeecg-boot/sys/actuator/redis/keysSizeForReport?printAll=true
+2022-12-17 13:45:45.479 [http-nio-8080-exec-6] INFO  org.jeecg.modules.jmreport.desreport.service.a.e:3048 -   替换${} apiUrl=http://localhost:8080/jeecg-boot/sys/actuator/redis/memoryForReport?printAll=true
+2022-12-17 13:45:50.466 [http-nio-8080-exec-1] INFO  org.jeecg.modules.jmreport.desreport.service.a.e:3044 -   原始 apiUrl=http://localhost:8080/jeecg-boot/sys/actuator/redis/keysSizeForReport?printAll=true , token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NzEyNTc1OTAsInVzZXJuYW1lIjoiYWRtaW4ifQ.GzJop7VAfj8U2vy2kN47VmpUb1XXivl-tevqk23z3WE
+2022-12-17 13:45:50.466 [http-nio-8080-exec-9] INFO  org.jeecg.modules.jmreport.desreport.service.a.e:3044 -   原始 apiUrl=http://localhost:8080/jeecg-boot/sys/actuator/redis/memoryForReport?printAll=true , token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NzEyNTc1OTAsInVzZXJuYW1lIjoiYWRtaW4ifQ.GzJop7VAfj8U2vy2kN47VmpUb1XXivl-tevqk23z3WE
+2022-12-17 13:45:50.467 [http-nio-8080-exec-9] INFO  org.jeecg.modules.jmreport.desreport.service.a.e:3048 -   替换${} apiUrl=http://localhost:8080/jeecg-boot/sys/actuator/redis/memoryForReport?printAll=true
+2022-12-17 13:45:50.467 [http-nio-8080-exec-1] INFO  org.jeecg.modules.jmreport.desreport.service.a.e:3048 -   替换${} apiUrl=http://localhost:8080/jeecg-boot/sys/actuator/redis/keysSizeForReport?printAll=true
+2022-12-17 15:04:56.841 [http-nio-8080-exec-9] INFO  org.jeecg.modules.message.websocket.WebSocket:52 - 【系统 WebSocket】连接断开，总数为:0
+2022-12-17 15:04:56.840 [http-nio-8080-exec-8] INFO  org.jeecg.modules.message.websocket.WebSocket:52 - 【系统 WebSocket】连接断开，总数为:0
+2022-12-17 15:05:00.324 [http-nio-8080-exec-3] INFO  org.jeecg.modules.message.websocket.WebSocket:43 - 【系统 WebSocket】有新的连接，总数为:1
+2022-12-17 15:05:00.839 [http-nio-8080-exec-6] INFO  org.jeecg.modules.message.websocket.WebSocket:43 - 【系统 WebSocket】有新的连接，总数为:1
+2022-12-17 15:05:00.850 [http-nio-8080-exec-9] INFO  org.jeecg.common.aspect.PermissionDataAspect:71 - 拦截请求 >> /online/cgform/head/list ; 请求类型 >> GET . 
+2022-12-17 15:05:00.857 [http-nio-8080-exec-9] INFO  org.jeecg.common.system.query.QueryGenerator:648 - ---查询过滤器，Query规则---field:copy_type, rule:=, value:0
+2022-12-17 15:05:00.857 [http-nio-8080-exec-9] INFO  org.jeecg.common.system.query.QueryGenerator:241 - 排序规则>>列:createTime,排序方式:desc
+2022-12-17 15:06:56.289 [http-nio-8080-exec-10] INFO  org.jeecg.modules.message.websocket.WebSocket:52 - 【系统 WebSocket】连接断开，总数为:0
+2022-12-17 15:06:56.290 [http-nio-8080-exec-3] INFO  org.jeecg.modules.message.websocket.WebSocket:52 - 【系统 WebSocket】连接断开，总数为:0
+2022-12-17 15:06:58.791 [http-nio-8080-exec-9] INFO  org.jeecg.modules.message.websocket.WebSocket:43 - 【系统 WebSocket】有新的连接，总数为:1
+2022-12-17 15:06:59.673 [http-nio-8080-exec-5] INFO  org.jeecg.modules.message.websocket.WebSocket:43 - 【系统 WebSocket】有新的连接，总数为:1
+2022-12-17 15:06:59.810 [http-nio-8080-exec-1] INFO  org.jeecg.common.aspect.PermissionDataAspect:71 - 拦截请求 >> /online/cgform/head/list ; 请求类型 >> GET . 
+2022-12-17 15:06:59.823 [http-nio-8080-exec-1] INFO  org.jeecg.common.system.query.QueryGenerator:648 - ---查询过滤器，Query规则---field:copy_type, rule:=, value:0
+2022-12-17 15:06:59.825 [http-nio-8080-exec-1] INFO  org.jeecg.common.system.query.QueryGenerator:241 - 排序规则>>列:createTime,排序方式:desc
+2022-12-17 15:08:28.908 [http-nio-8080-exec-7] INFO  org.jeecg.modules.message.websocket.WebSocket:43 - 【系统 WebSocket】有新的连接，总数为:1
+2022-12-17 15:08:31.005 [http-nio-8080-exec-4] INFO  org.jeecg.modules.message.websocket.WebSocket:52 - 【系统 WebSocket】连接断开，总数为:0
+2022-12-17 15:08:31.735 [http-nio-8080-exec-2] INFO  org.jeecg.modules.message.websocket.WebSocket:52 - 【系统 WebSocket】连接断开，总数为:0
+2022-12-17 15:08:37.606 [http-nio-8080-exec-10] INFO  org.jeecg.modules.message.websocket.WebSocket:43 - 【系统 WebSocket】有新的连接，总数为:1
+2022-12-17 15:10:16.577 [http-nio-8080-exec-4] INFO  org.jeecg.modules.message.websocket.WebSocket:52 - 【系统 WebSocket】连接断开，总数为:0
+2022-12-17 15:10:16.855 [http-nio-8080-exec-2] INFO  org.jeecg.modules.message.websocket.WebSocket:52 - 【系统 WebSocket】连接断开，总数为:0
+2022-12-17 15:10:19.767 [http-nio-8080-exec-10] INFO  org.jeecg.modules.message.websocket.WebSocket:43 - 【系统 WebSocket】有新的连接，总数为:1
+2022-12-17 15:10:20.135 [http-nio-8080-exec-6] INFO  org.jeecg.common.aspect.PermissionDataAspect:71 - 拦截请求 >> /online/cgform/head/list ; 请求类型 >> GET . 
+2022-12-17 15:10:20.150 [http-nio-8080-exec-6] INFO  org.jeecg.common.system.query.QueryGenerator:648 - ---查询过滤器，Query规则---field:copy_type, rule:=, value:0
+2022-12-17 15:10:20.151 [http-nio-8080-exec-6] INFO  org.jeecg.common.system.query.QueryGenerator:241 - 排序规则>>列:createTime,排序方式:desc
+2022-12-17 15:10:20.840 [http-nio-8080-exec-2] INFO  org.jeecg.modules.message.websocket.WebSocket:43 - 【系统 WebSocket】有新的连接，总数为:1
+2022-12-17 18:16:13.847 [http-nio-8080-exec-5] INFO  org.jeecg.modules.message.websocket.WebSocket:52 - 【系统 WebSocket】连接断开，总数为:0
+2022-12-17 18:16:14.197 [http-nio-8080-exec-1] INFO  org.jeecg.modules.message.websocket.WebSocket:52 - 【系统 WebSocket】连接断开，总数为:0
+2022-12-17 18:16:35.231 [lettuce-eventExecutorLoop-1-22] INFO  io.lettuce.core.protocol.ConnectionWatchdog:171 - Reconnecting, last destination was /121.40.112.76:6379
+2022-12-17 18:16:35.273 [lettuce-nioEventLoop-4-4] INFO  io.lettuce.core.protocol.ReconnectionHandler:174 - Reconnected to 121.40.112.76:6379
+2022-12-17 18:16:35.306 [http-nio-8080-exec-5] INFO  o.jeecg.modules.system.controller.LoginController:516 - 获取验证码，Redis key = cc1d6304df1ad91024b074e4d891b317，checkCode = 93aL
+2022-12-17 18:16:35.307 [http-nio-8080-exec-8] INFO  o.jeecg.modules.system.controller.LoginController:516 - 获取验证码，Redis key = 34df595a0a94f7cd4fccebce1ec85687，checkCode = wgFc
+2022-12-17 18:16:35.332 [http-nio-8080-exec-7] INFO  o.jeecg.modules.system.controller.LoginController:193 -  用户名:  管理员,退出成功！ 
+2022-12-17 18:16:35.336 [http-nio-8080-exec-10] INFO  o.jeecg.modules.system.controller.LoginController:193 -  用户名:  管理员,退出成功！ 
+2022-12-17 19:01:17.718 [http-nio-8080-exec-1] INFO  o.jeecg.modules.system.controller.LoginController:516 - 获取验证码，Redis key = 89c680a97004841895cb9fa6ffc3773b，checkCode = ajMA
+2022-12-17 19:01:18.447 [http-nio-8080-exec-5] INFO  o.jeecg.modules.system.controller.LoginController:516 - 获取验证码，Redis key = 849a849672c5fadb6fce63ee34ec3962，checkCode = 55yp
+2022-12-17 19:02:04.075 [http-nio-8080-exec-4] INFO  o.jeecg.modules.system.controller.LoginController:516 - 获取验证码，Redis key = 3c5c009797eda1bd52f854aeeced35c6，checkCode = uVr6
+2022-12-17 19:02:05.342 [http-nio-8080-exec-10] INFO  o.jeecg.modules.system.controller.LoginController:516 - 获取验证码，Redis key = b6592d8352a54dfc0b3710b21710b413，checkCode = nvBK
+2022-12-17 19:10:27.220 [http-nio-8080-exec-3] INFO  o.jeecg.modules.system.controller.LoginController:516 - 获取验证码，Redis key = a8c98a8db5f5706fc68953f63fa67f0c，checkCode = AR3D
+2022-12-17 19:10:31.736 [http-nio-8080-exec-8] INFO  o.j.c.modules.redis.writer.JeecgRedisCacheWriter:113 - redis remove key:sys:cache:encrypt:user::admin
+2022-12-17 19:10:31.859 [http-nio-8080-exec-2] INFO  o.j.c.desensitization.aspect.SensitiveDataAspect:76 - 加密操作，Aspect程序耗时：1ms
+2022-12-17 19:10:32.419 [http-nio-8080-exec-4] INFO  org.jeecg.modules.message.websocket.WebSocket:43 - 【系统 WebSocket】有新的连接，总数为:1
+2022-12-17 19:13:53.573 [http-nio-8080-exec-4] INFO  org.jeecg.modules.message.websocket.WebSocket:52 - 【系统 WebSocket】连接断开，总数为:0
+2022-12-17 19:13:56.983 [http-nio-8080-exec-10] INFO  org.jeecg.modules.message.websocket.WebSocket:43 - 【系统 WebSocket】有新的连接，总数为:1
+2022-12-17 20:42:06.129 [http-nio-8080-exec-8] INFO  org.jeecg.modules.message.websocket.WebSocket:52 - 【系统 WebSocket】连接断开，总数为:0
+2022-12-17 20:42:09.048 [http-nio-8080-exec-4] INFO  org.jeecg.modules.message.websocket.WebSocket:43 - 【系统 WebSocket】有新的连接，总数为:1
+2022-12-17 20:42:10.232 [http-nio-8080-exec-5] INFO  org.jeecg.modules.message.websocket.WebSocket:43 - 【系统 WebSocket】有新的连接，总数为:1
+2022-12-17 20:53:53.236 [http-nio-8080-exec-3] INFO  org.jeecg.modules.message.websocket.WebSocket:52 - 【系统 WebSocket】连接断开，总数为:0
+2022-12-17 20:53:53.425 [http-nio-8080-exec-6] INFO  org.jeecg.modules.message.websocket.WebSocket:52 - 【系统 WebSocket】连接断开，总数为:0
+2022-12-17 20:53:56.135 [http-nio-8080-exec-7] INFO  org.jeecg.modules.message.websocket.WebSocket:43 - 【系统 WebSocket】有新的连接，总数为:1
+2022-12-17 20:53:57.134 [http-nio-8080-exec-5] INFO  org.jeecg.modules.message.websocket.WebSocket:43 - 【系统 WebSocket】有新的连接，总数为:1
+2022-12-17 20:56:35.713 [http-nio-8080-exec-1] INFO  org.jeecg.modules.message.websocket.WebSocket:52 - 【系统 WebSocket】连接断开，总数为:0
+2022-12-17 20:56:35.714 [http-nio-8080-exec-3] INFO  org.jeecg.modules.message.websocket.WebSocket:52 - 【系统 WebSocket】连接断开，总数为:0
+2022-12-17 20:56:38.183 [http-nio-8080-exec-5] INFO  org.jeecg.modules.message.websocket.WebSocket:43 - 【系统 WebSocket】有新的连接，总数为:1
+2022-12-17 20:56:39.446 [http-nio-8080-exec-2] INFO  org.jeecg.modules.message.websocket.WebSocket:43 - 【系统 WebSocket】有新的连接，总数为:1
+2022-12-17 20:58:19.406 [http-nio-8080-exec-1] INFO  org.jeecg.modules.message.websocket.WebSocket:52 - 【系统 WebSocket】连接断开，总数为:0
+2022-12-17 20:58:19.407 [http-nio-8080-exec-8] INFO  org.jeecg.modules.message.websocket.WebSocket:52 - 【系统 WebSocket】连接断开，总数为:0
+2022-12-17 20:58:21.894 [http-nio-8080-exec-5] INFO  org.jeecg.modules.message.websocket.WebSocket:43 - 【系统 WebSocket】有新的连接，总数为:1
+2022-12-17 20:58:23.153 [http-nio-8080-exec-6] INFO  org.jeecg.modules.message.websocket.WebSocket:43 - 【系统 WebSocket】有新的连接，总数为:1

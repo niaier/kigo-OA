@@ -1,0 +1,131 @@
+<div style="width:100%;height:100%;" class="modal" ng-controller="KisBpmAssignmentPopupCtrl">
+    <div style="width:80%;height:100%;" class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true" ng-click="close()">&times;</button>
+                <h2 translate>PROPERTY.ASSIGNMENT.TITLE</h2>
+            </div>
+            <div class="modal-body">
+                <blockquote class="layui-elem-quote" style="font-size: 12px;">
+                    节点设置说明：如果上一节点是多实例节点，本节点不可设置选择性质的分配，（<span style="color: red">多实例节点的下级节点不可再设置多实例节点，需要设置普通任务节点</span>）。可设置的节点具体说明如下：<br>
+                    1、静态分配：代理人、候选人、候选组<br>
+                    2、动态分配：用户组选择（普通节点需要指定1名组人员）、部门经理、上级领导、分管领导、流程发起人、指定范围选择（普通节点需要指定1名人员）、代理人、候选人、候选组。（<span style="color: red">如果指定节点中存在多个办理人，则根据顺序取最后一个办理人。</span>）<br>
+                    <hr class="layui-bg-green">
+                    多实例设置说明：如果该节点是多实例节点，需要指定静态分配-代理人。如：${assignment},assignment名称与【元素变量（多实例）】一致。设置完成后需要在外部列表功能按钮【节点管理】中动态指定办理人。
+                </blockquote>
+                <div>
+                    <select ng-model="type" ng-change="selectCheckType(type);" style="width: 280px;height: 28px">
+                        <option value="0">静态分配(流程设计器指定)</option>
+                        <option value="1">动态分配(程序动态指定)</option>
+                    </select>
+                </div>
+                <div style="margin-top: 20px;" ng-if="type=='1'">
+                    <div>
+                        <select ng-model="assign_mode" ng-change="selectAssignModee(assign_mode);" style="width: 280px;height: 28px">
+                            <option value="0">所有人员中选择（根据组织选择）</option>
+                            <option value="1">组织选择（指定组织父节点）</option>
+                            <option value="2">用户组选择（选择指定组内成员）</option>
+                            <option value="3">发起人本组织选择</option>
+                            <option value="4">部门经理</option>
+                            <option value="5">上级领导</option>
+                            <option value="6">分管领导</option>
+                            <option value="7">流程发起人</option>
+                            <option value="8">指定范围选择</option>
+                            <option value="9">代理人（选择单用户）</option>
+                            <option value="10">候选人（选择多用户）</option>
+                            <option value="11">候选组（选择多组织）</option>
+                        </select>
+                    </div>
+                   <div ng-if="assign_mode=='1'" style="margin-top: 20px;">
+                       <div style="width: 80%;float: left">
+                           <input type="hidden" name="organize_id" id="organize_id" ng-model="organize_id">
+                           <textarea readonly name="organize_name" id="organize_name" ng-model="organize_name" placeholder="请选择组织" lay-verify="required" class="layui-textarea"></textarea>
+                       </div>
+                       <div style="width: 18%;float: left;margin-left: 1%">
+                           <button style="width: 80px;position:absolute;bottom:20px;" type="button" ng-click="selectOneOrganize()" class="layui-btn layui-btn-xs layui-btn-normal">选择</button>
+                       </div>
+                       <div style="clear: both"></div>
+                   </div>
+                    <div ng-if="assign_mode=='2'" style="margin-top: 20px;">
+                        <select id="group_id" ng-model="group_id" ng-change="selectAssignmentGroup(group_id);" style="width: 280px;height: 28px">
+                            <option class="option" ng-repeat="x in groupList" ng-selected="x.id==group_id" value="{{x.id}}">{{x.name}}</option>
+                        </select>
+                    </div>
+                    <div ng-if="assign_mode=='8'||assign_mode=='10'" style="margin-top: 20px;">
+                        <div style="width: 80%;float: left">
+                            <input type="hidden" name="user_ids" id="user_ids" ng-model="user_ids">
+                            <textarea readonly name="user_names" id="user_names" ng-model="user_names" placeholder="请选择用户信息" lay-verify="required" class="layui-textarea"></textarea>
+                        </div>
+                        <div style="width: 18%;float: left;margin-left: 1%">
+                            <button style="width: 80px;position:absolute;bottom:20px;" type="button" ng-click="selectMoreUser()" class="layui-btn layui-btn-xs layui-btn-normal">选择</button>
+                        </div>
+                        <div style="clear: both"></div>
+                    </div>
+                    <div ng-if="assign_mode=='9'" style="margin-top: 20px;">
+                        <div style="width: 80%;float: left">
+                            <input type="hidden" ng-model="user_id">
+                            <textarea readonly ng-model="user_name" placeholder="请选择用户信息" lay-verify="required" class="layui-textarea"></textarea>
+                        </div>
+                        <div style="width: 18%;float: left;margin-left: 1%">
+                            <button style="width: 80px;position:absolute;bottom:20px;" type="button" ng-click="selectOneUser()" class="layui-btn layui-btn-xs layui-btn-normal">选择</button>
+                        </div>
+                        <div style="clear: both"></div>
+                    </div>
+                    <div ng-if="assign_mode=='11'" style="margin-top: 20px;">
+                        <div style="width: 80%;float: left">
+                            <input type="hidden" ng-model="organize_ids">
+                            <textarea readonly ng-model="organize_names" placeholder="请选择组织信息" lay-verify="required" class="layui-textarea"></textarea>
+                        </div>
+                        <div style="width: 18%;float: left;margin-left: 1%">
+                            <button style="width: 80px;position:absolute;bottom:20px;" type="button" ng-click="selectMoreOrganize()" class="layui-btn layui-btn-xs layui-btn-normal">选择</button>
+                        </div>
+                        <div style="clear: both"></div>
+                    </div>
+                </div>
+                <div style="margin-top: 20px;" ng-if="type=='0'">
+                    <div class="col-xs-4">
+                        <div class="row row-no-gutter">
+                            <div class="form-group">
+                                <label for="assigneeField">{{'PROPERTY.ASSIGNMENT.ASSIGNEE' | translate}}</label>
+                                <input type="text" id="assigneeField" class="form-control" ng-click="selectAssignee(assignment.assignee)" ng-model="assignment.assignee" placeholder="{{'PROPERTY.ASSIGNMENT.ASSIGNEE_PLACEHOLDER' | translate}}" />
+                            </div>
+                        </div>
+
+                        <div class="row row-no-gutter">
+                            <div class="form-group">
+                                <label for="userField">{{'PROPERTY.ASSIGNMENT.CANDIDATE_USERS' | translate}}</label>
+                                <div ng-repeat="candidateUser in assignment.candidateUsers">
+                                    <input id="userField" class="form-control" type="text" ng-click="selectCandidate(candidateUser.value)" ng-model="candidateUser.value" />
+                                    <i class="glyphicon glyphicon-minus clickable-property" ng-click="removeCandidateUserValue($index)"></i>
+                                    <i ng-if="$index == (assignment.candidateUsers.length - 1)" class="glyphicon glyphicon-plus clickable-property" ng-click="addCandidateUserValue($index)"></i>
+                                </div>
+                            </div>
+
+<!--                            <div class="form-group">-->
+<!--                                <label for="groupField">{{'PROPERTY.ASSIGNMENT.CANDIDATE_GROUPS' | translate}}</label>-->
+<!--                                <div ng-repeat="candidateGroup in assignment.candidateGroups">-->
+<!--                                    <input id="groupField" class="form-control" type="text" ng-click="selectGroup(candidateGroup.value)" ng-model="candidateGroup.value" />-->
+<!--                                    <i class="glyphicon glyphicon-minus clickable-property" ng-click="removeCandidateGroupValue($index)"></i>-->
+<!--                                    <i ng-if="$index == (assignment.candidateGroups.length - 1)" class="glyphicon glyphicon-plus clickable-property" ng-click="addCandidateGroupValue($index)"></i>-->
+<!--                                </div>-->
+<!--                            </div>-->
+                        </div>
+                    </div>
+                    <div class="col-xs-8">
+                        <div style="margin: 10px 0 10px 0">
+                            <span style="color: #00b8d4;font-size: 18px">{{current_assignment}}</span>
+                        </div>
+                            <span class="mb10">
+                                <strong>{{selectTitle}}</strong>
+                            </span>
+                        <div style="min-height:350px;" class="default-grid ng-scope ngGrid ng1521010657341 unselectable" ng-grid="gridOptions"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button ng-click="close()" class="btn btn-primary" translate>ACTION.CANCEL</button>
+                <button ng-click="save()" class="btn btn-primary" translate>ACTION.SAVE</button>
+            </div>
+        </div>
+    </div>
+</div>

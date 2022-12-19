@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qingfeng.document.mapper.DFileMapper">
+
+
+    <!--查询分页列表-->
+    <select id="findListPage" parameterType="DFile" resultType="DFile">
+        select
+            a.id as "id",
+            a.type as "type",
+            a.classify_id as "classify_id",
+            a.name as "name",
+            a.file_name as "file_name",
+            a.file_path as "file_path",
+            a.file_type as "file_type",
+            a.file_size as "file_size",
+            a.file_suffix as "file_suffix",
+            a.file_hash as "file_hash",
+            a.is_share as "is_share",
+            a.share_classify_id as "share_classify_id",
+            a.share_remark as "share_remark",
+            a.share_time as "share_time",
+            a.order_by as "order_by",
+            a.remark as "remark",
+            a.create_time as "create_time",
+            a.create_user as "create_user",
+            a.create_organize as "create_organize",
+            a.update_user as "update_user",
+            a.update_time as "update_time",
+            b.name as "classify_name",
+            c.name as "user_name"
+            from document_dfile a
+            left join document_dclassify b on a.classify_id=b.id
+            left join system_user c on a.create_user = c.id
+            where 1=1
+            <if test="obj.name != null and obj.name != ''">
+                and a.name like concat('%',concat(#{obj.name},'%'))
+            </if>
+            <if test="obj.type == 1">
+                and a.is_share = '1'
+                <if test="obj.classify_id != null and obj.classify_id != ''">
+                    and a.share_classify_id = #{obj.classify_id}
+                </if>
+            </if>
+            <if test="obj.type != 1">
+                and a.type = #{obj.type}
+                <if test="obj.classify_id != null and obj.classify_id != ''">
+                    and a.classify_id = #{obj.classify_id}
+                </if>
+            </if>
+            <if test="obj.user_id != null and obj.user_id != ''">
+                and a.create_user = #{obj.user_id}
+            </if>
+            <if test="obj.is_share != null and obj.is_share != ''">
+                and a.is_share = #{obj.is_share}
+            </if>
+            <if test="obj.start_time != null and obj.start_time != ''">
+                and a.create_time >= #{obj.start_time}
+            </if>
+            <if test="obj.end_time != null and obj.end_time != ''">
+                and a.create_time <![CDATA[ <= ]]> #{obj.end_time}
+            </if>
+            order by a.order_by+0 asc , a.create_time desc
+    </select>
+
+
+    <!--查询分页列表-->
+    <select id="findList" parameterType="DFile" resultType="DFile">
+        select
+            a.id as "id",
+            a.type as "type",
+            a.classify_id as "classify_id",
+            a.name as "name",
+            a.file_name as "file_name",
+            a.file_path as "file_path",
+            a.file_type as "file_type",
+            a.file_size as "file_size",
+            a.file_suffix as "file_suffix",
+            a.file_hash as "file_hash",
+            a.is_share as "is_share",
+            a.share_classify_id as "share_classify_id",
+            a.share_remark as "share_remark",
+            a.share_time as "share_time",
+            a.order_by as "order_by",
+            a.remark as "remark",
+            a.create_time as "create_time",
+            a.create_user as "create_user",
+            a.create_organize as "create_organize",
+            a.update_user as "update_user",
+            a.update_time as "update_time",
+            b.name as "classify_name",
+            c.name as "user_name"
+            from document_dfile a
+            left join document_dclassify b on a.classify_id=b.id
+            left join system_user c on a.create_user = c.id
+            where 1=1
+            <if test="name != null and name != ''">
+                and a.name like concat('%',concat(#{name},'%'))
+            </if>
+            <if test="type != null and type != ''">
+                and a.type = #{type}
+            </if>
+            <if test="classify_id != null and classify_id != ''">
+                and a.classify_id = #{classify_id}
+            </if>
+            <if test="share_classify_id != null and share_classify_id != ''">
+                and a.share_classify_id = #{share_classify_id}
+            </if>
+            <if test="user_id != null and user_id != ''">
+                and a.create_user = #{user_id}
+            </if>
+            <if test="is_share != null and is_share != ''">
+                and a.is_share = #{is_share}
+            </if>
+            order by a.order_by+0 asc , a.create_time desc
+    </select>
+
+
+</mapper>
